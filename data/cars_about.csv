@@ -1,0 +1,406 @@
+﻿car_id,car_model,used_label,price,exteriorColor,interiorColor,drivetrain,minMPG,maxMPG,fuelType,transmission,engine,mileage
+1.0,Toyota Sienna SE,Used,$39,Red,Black,Front-wheel Drive,19.0,27.0,Gasoline,8-Speed Automatic,3.5L V6 24V PDI DOHC,29403.0
+2.0,Ford F-150 Lariat,Used,$49,Shadow Black,Black,Four-wheel Drive,19.0,24.0,Gasoline,10-Speed Automatic,3.5L V6 24V PDI DOHC Twin Turbo,32929.0
+3.0,RAM 1500 Laramie,Used,$41,Granite Crystal Clearcoat Metallic,Black,Four-wheel Drive,15.0,21.0,Gasoline,8-Speed Automatic,5.7L V8 16V MPFI OHV,23173.0
+4.0,Honda Accord Sport SE,Used,$28,Gray,–,Front-wheel Drive,29.0,35.0,Gasoline,Automatic CVT,1.5L I4 16V GDI DOHC Turbo,10598.0
+5.0,Lexus RX 350,Used,$49,Eminent White Pearl,Birch,Front-wheel Drive,20.0,27.0,Gasoline,8-Speed Automatic,3.5L V6 24V PDI DOHC,28137.0
+6.0,Toyota 4Runner SR5,Used,$23,Black,–,Rear-wheel Drive,17.0,23.0,Gasoline,5-Speed Automatic,4.0L V6 24V MPFI DOHC,105469.0
+7.0,Honda HR-V LX,Used,$20,Modern Steel Metallic,Black,Front-wheel Drive,28.0,34.0,Gasoline,Automatic CVT,1.8L I4 16V MPFI SOHC,10458.0
+8.0,Mercedes-Benz E-Class E 350,Used,$18,Lunar Blue Metallic,Saffron,Rear-wheel Drive,21.0,30.0,Gasoline,7-Speed Automatic,3.5L V6 24V GDI DOHC,58157.0
+9.0,Honda Pilot Touring 8-Passenger,Used,$44,Platinum White Pearl,Beige,All-wheel Drive,19.0,26.0,Gasoline,9-Speed Automatic,3.5L V6 24V GDI SOHC,14445.0
+10.0,Dodge Charger Scat Pack,Dodge Certified,$46,Triple Nickel Clearcoat,Black,Rear-wheel Drive,15.0,24.0,Gasoline,8-Speed Automatic,6.4L V8 16V MPFI OHV,25642.0
+11.0,Lexus RC 350 Base,Used,$42,Infrared,Silver,Rear-wheel Drive,19.0,28.0,Gasoline,8-Speed Automatic,3.5L V6 24V PDI DOHC,10236.0
+12.0,Lexus GS 350 Base,Used,$16,Gray,Black,Rear-wheel Drive,19.0,28.0,Gasoline,6-Speed Automatic,3.5L V6 24V GDI DOHC,48605.0
+13.0,Lexus RX 350 RX 350,Used,$36,Nightfall Mica,Gray,Front-wheel Drive,20.0,27.0,Gasoline,8-Speed Automatic,3.5L V6 24V GDI DOHC,47729.0
+14.0,Dodge Charger Scat Pack,Dodge Certified,$47,White Knuckle Clearcoat,Black,Rear-wheel Drive,15.0,24.0,Gasoline,8-Speed Automatic,6.4L V8 16V MPFI OHV,31538.0
+15.0,Dodge Charger Scat Pack,Used,$41,Octane Red Pearlcoat,Black,Rear-wheel Drive,15.0,24.0,Gasoline,8-Speed Automatic,6.4L V8 16V MPFI OHV,18717.0
+16.0,Lexus RC 350 Base,Used,$41,Silver Lining Metallic,Sport,Rear-wheel Drive,19.0,28.0,Gasoline,8-Speed Automatic,3.5L V6 24V PDI DOHC,34102.0
+17.0,Ford Explorer XLT,Used,$32,Red,Black,Four-wheel Drive,16.0,22.0,Gasoline,6-Speed Automatic,3.5L V6 24V MPFI DOHC,61294.0
+18.0,Subaru Crosstrek Premium,Used,$25,Cool-Gray Khaki,Black,All-wheel Drive,28.0,33.0,Gasoline,Automatic CVT,2.0L H4 16V GDI DOHC,11508.0
+19.0,Ford Explorer XLT,Used,$33,Red,–,Four-wheel Drive,16.0,22.0,Gasoline,Automatic,Regular Unleaded V-6 3.5 L/213,81375.0
+20.0,Ford Explorer XLT,Used,$30,Ruby Red Metallic Tinted Clearcoat,Ebony Black,Front-wheel Drive,17.0,24.0,Gasoline,6-Speed Automatic,2.3L I4 16V GDI DOHC Turbo,28357.0
+21.0,Ford Explorer XLT,Used,$32,Shadow Black,Ebony Black,Four-wheel Drive,16.0,22.0,Gasoline,6-Speed Automatic,3.5L V6 24V MPFI DOHC,33188.0
+22.0,Acura RDX A-Spec,Used,$37,Majestic Black Pearl,Red,All-wheel Drive,21.0,26.0,Gasoline,10-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,5188.0
+23.0,Acura RDX A-Spec,Used,$38,Apex Blue Pearl,Red,All-wheel Drive,21.0,26.0,Gasoline,10-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,12878.0
+24.0,Ford Explorer XLT,Used,$31,Magnetic,Ebony Black,Four-wheel Drive,16.0,22.0,Gasoline,6-Speed Automatic,3.5L V6 24V MPFI DOHC,47661.0
+25.0,Subaru Forester Sport,Used,$29,Ice Silver Metallic,Gray,All-wheel Drive,26.0,33.0,Gasoline,Automatic CVT,2.5L H4 16V GDI DOHC,10859.0
+26.0,Subaru Crosstrek 2.0i Premium,Used,$31,Venetian Red Pearl,Black,All-wheel Drive,27.0,33.0,Gasoline,Automatic CVT,2.0L H4 16V GDI DOHC,30849.0
+27.0,Subaru Crosstrek 2.0i Premium,Used,$24,Venetian Red Pearl,Black,All-wheel Drive,27.0,33.0,Gasoline,Automatic CVT,2.0L H4 16V GDI DOHC,86759.0
+28.0,Subaru Crosstrek 2.0i Premium,Used,$24,Crystal White Pearl,Black,All-wheel Drive,27.0,33.0,Gasoline,Automatic CVT,2.0L H4 16V GDI DOHC,61053.0
+29.0,BMW 435 Gran Coupe i xDrive,Used,$30,White,Coral Red / Black,All-wheel Drive,20.0,30.0,Gasoline,8-Speed Automatic,3.0L I6 24V GDI DOHC Turbo,65219.0
+30.0,BMW 435 Gran Coupe i xDrive,Used,$30,Gray,Black,All-wheel Drive,20.0,30.0,Gasoline,8-Speed Automatic,3.0L I6 24V GDI DOHC Turbo,63055.0
+31.0,Honda Odyssey EX-L,Used,$38,Modern Steel Metallic,Gray,Front-wheel Drive,19.0,28.0,Gasoline,9-Speed Automatic,3.5L V6 24V GDI SOHC,64571.0
+32.0,Honda Odyssey EX-L,Used,$28,Gray,Beige,Front-wheel Drive,19.0,28.0,Gasoline Fuel,6-Speed A/T,248.0HP 3.5L V6 Cylinder Engine Gasoline Fuel,56000.0
+33.0,Mercedes-Benz GLC 300 Base,Used,$43,Black,Black,Rear-wheel Drive,22.0,29.0,Gasoline,9-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,34768.0
+34.0,Audi Q5 2.0T Premium,Used,$37,Florett Silver Metallic,Black,All-wheel Drive,22.0,27.0,Gasoline,7-Speed Automatic with Auto-Shift,2.0L I4 16V GDI DOHC Turbo,26012.0
+35.0,BMW 428 i,Used,$27,Glacier Silver Metallic,Black,Rear-wheel Drive,23.0,34.0,Gasoline,8-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,48531.0
+36.0,Volvo XC60 T5 Momentum,Used,$40,Denim Blue,–,All-wheel Drive,20.0,27.0,Gasoline,8-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,10969.0
+37.0,Honda Odyssey EX-L,Used,$38,Crystal Black Pearl,Mocha,Front-wheel Drive,19.0,28.0,Gasoline,9-Speed Automatic,3.5L V6 24V GDI SOHC,32201.0
+38.0,Lincoln MKZ Standard,Used,$30,Magnetic Gray Metallic,Ebony,Front-wheel Drive,20.0,31.0,Gasoline,6-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,34686.0
+39.0,Subaru Ascent Touring 7-Passenger,Used,$31,Crystal White Pearl,Java Brown,All-wheel Drive,20.0,26.0,Gasoline,Automatic CVT,2.4L H4 16V GDI DOHC Turbo,47226.0
+40.0,Land Rover Range Rover Evoque SE Premium,Used,$34,Gray,Beige,Four-wheel Drive,21.0,29.0,Gasoline Fuel,Transmission w/Dual Shift Mode,240.0HP 2.0L 4 Cylinder Engine Gasoline Fuel,39855.0
+41.0,Acura MDX A-Spec,Acura Certified,$58,Performance Red Pearl,Ebony,All-wheel Drive,19.0,25.0,Gasoline,10-Speed Automatic,3.5L V6 24V GDI SOHC,12531.0
+42.0,Honda Pilot EX-L,Used,$41,Silver Metallic,Gray,Front-wheel Drive,20.0,27.0,Gasoline,9-Speed Automatic,3.5L V6 24V GDI SOHC,15118.0
+43.0,Chevrolet Impala Premier 2LZ,Used,$26,Black,–,Front-wheel Drive,19.0,28.0,Gasoline,6-Speed Automatic,3.6L V6 24V GDI DOHC,49372.0
+44.0,INFINITI G37 x,Used,$17,Gray,Black,All-wheel Drive,18.0,25.0,Gasoline Fuel,7-Speed A/T,328.0HP 3.7L V6 Cylinder Engine Gasoline Fuel,66560.0
+45.0,Honda Civic EX,Used,$22,Modern Steel Metallic,Black / Gray,Front-wheel Drive,31.0,40.0,Gasoline,Automatic CVT,1.5L I4 16V GDI DOHC Turbo,35257.0
+46.0,Tesla Model S 75,Used,$47,Silver,White,Rear-wheel Drive,0.0,0.0,Electric Fuel System,A/T,382.0HP Electric Motor Electric Fuel System,84000.0
+47.0,Honda Pilot Special Edition,Honda Certified,$43,Steel Sapphire Metallic,Gray,All-wheel Drive,19.0,26.0,Gasoline,Automatic,Regular Unleaded V-6 3.5 L/212,10563.0
+48.0,Jeep Grand Cherokee SRT,Used,$52,Redline 2 Coat Pearl,Sepia / Black,Four-wheel Drive,13.0,19.0,Gasoline,8-Speed Automatic,6.4L V8 16V MPFI OHV,49870.0
+49.0,Ford Explorer Limited,Used,$12,White,Beige,Front-wheel Drive,17.0,25.0,Gasoline,6-Speed Automatic,3.5L V6 24V MPFI DOHC,117401.0
+50.0,BMW M240 i,Used,$33,Alpine White,Oyster/Black,Rear-wheel Drive,21.0,32.0,Gasoline,8-SPEED A/T,Straight 6 Cylinder Engine,60733.0
+51.0,Volvo XC60 T5 Inscription,Used,$41,Onyx Black Metallic,Charcoal,Front-wheel Drive,22.0,29.0,Gasoline,8-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,36577.0
+52.0,Honda Civic EX,Used,$23,Crystal Black Pearl,Black,Front-wheel Drive,31.0,40.0,Gasoline,Automatic CVT,1.5L I4 16V GDI DOHC Turbo,32333.0
+53.0,BMW X1 xDrive28i,Used,$32,Alpine White,Black,All-wheel Drive,23.0,31.0,Gasoline,8-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,39879.0
+54.0,BMW X1 xDrive28i,Used,$30,Jet Black,Black,All-wheel Drive,23.0,31.0,Gasoline,8-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,50199.0
+55.0,Acura ILX Premium & A-SPEC Packages,Used,$23,White,Red,Front-wheel Drive,24.0,34.0,Gasoline,8-Speed Automatic with Auto-Shift,2.4L I4 16V GDI DOHC,14940.0
+56.0,Chrysler 300 S,Used,$30,Gloss Black,Black,Rear-wheel Drive,19.0,30.0,Gasoline,8-Speed Automatic,3.6L V6 24V MPFI DOHC,19229.0
+57.0,Land Rover Range Rover Sport 3.0L Supercharged HSE Dynamic,Used,$53,White,Red,Four-wheel Drive,17.0,23.0,Gasoline Fuel,8-Speed A/T,380.0HP 3.0L V6 Cylinder Engine Gasoline Fuel,55000.0
+58.0,BMW Z4 sDrive30i,Used,$46,Metallic,Ivory White,Rear-wheel Drive,25.0,32.0,Gasoline,8-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,23504.0
+60.0,Land Rover Range Rover,Used,$51,Santorini Black,Ebony / Ebony,Four-wheel Drive,14.0,19.0,Gasoline,8-Speed Automatic,5.0L V8 32V GDI DOHC Supercharged,54449.0
+61.0,Ford F-150 Lariat,Used,$18,Red,Black,Four-wheel Drive,14.0,19.0,E85 Flex Fuel,6-Speed Automatic,5.0L V8 32V MPFI DOHC Flexible Fuel,110111.0
+62.0,Mazda CX-5 Grand Touring,Used,$25,Jet Black Mica,Black,Front-wheel Drive,25.0,31.0,Gasoline,6-Speed Automatic,2.5L I4 16V GDI DOHC,66601.0
+63.0,Kia Sportage LX,Used,$18,Black Cherry,Black,Front-wheel Drive,23.0,30.0,Gasoline,6-Speed Automatic,2.4L I4 16V GDI DOHC,79336.0
+64.0,Volkswagen Tiguan Sport,Used,$20,Reflex Silver Metallic,Charcoal Black,All-wheel Drive,20.0,24.0,Gasoline,Automatic,Intercooled Turbo Premium Unleaded I-4 2.0 L/121,87957.0
+65.0,Chrysler 300 S,Used,$33,Granite Crystal Clearcoat Metallic,Linen,Rear-wheel Drive,19.0,30.0,Gasoline,8-Speed Automatic,5.7L V8 16V MPFI OHV,27054.0
+66.0,Tesla Model X Performance,Used,$122,White,White,All-wheel Drive,80.0,77.0,Electric Fuel System,1-Speed A/T,Electric Motor Electric Fuel System,29918.0
+67.0,Subaru Impreza 2.0i Premium,Used,$4,Ice Silver Metallic,Black,All-wheel Drive,28.0,36.0,Gasoline,Automatic CVT,2.0L H4 16V GDI DOHC,67792.0
+68.0,Jeep Cherokee Latitude Plus,Used,$27,Diamond Black,Black,Four-wheel Drive,21.0,29.0,Gasoline,9-Speed Automatic,2.4L I4 16V MPFI SOHC,21870.0
+69.0,Jeep Cherokee Latitude Plus,Used,$21,Granite Crystal Metallic Clearcoat,Black,Front-wheel Drive,22.0,31.0,Gasoline,9-SPEED A/T,4 Cylinder Engine,74832.0
+70.0,BMW 320 i xDrive,Used,$25,Black Sapphire,Charcoal,All-wheel Drive,23.0,34.0,Gasoline,8-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,55001.0
+71.0,Porsche Cayenne Base,Used,$44,Black,Black,All-wheel Drive,19.0,24.0,Gasoline,8-Speed Automatic,3.6L V6 24V GDI DOHC,37979.0
+72.0,Nissan Rogue SV,Used,$19,Pearl White,Charcoal,All-wheel Drive,25.0,32.0,Gasoline,Automatic CVT,2.5L I4 16V MPFI DOHC,60122.0
+73.0,Mercedes-Benz E-Class E 350 4MATIC,Used,$14,Black,Black,All-wheel Drive,21.0,30.0,Gasoline,driver adaptive 7 speed automatic,V6 Cylinder Engine,92378.0
+74.0,BMW X5 xDrive35i Premium,Used,$12,Black,Brown,All-wheel Drive,16.0,23.0,Gasoline,8-Speed Automatic,3.0L I6 24V GDI DOHC Turbo,75012.0
+75.0,Hyundai Santa Fe SEL 2.4,Used,$30,Portofino Gray,Black,All-wheel Drive,21.0,27.0,Gasoline,8-Speed Automatic,2.4L I4 16V GDI DOHC,42185.0
+76.0,Hyundai Santa Fe SEL 2.4,Used,$28,Machine Gray,Black / Beige,All-wheel Drive,21.0,27.0,Gasoline,8-Speed Automatic,2.4L I4 16V GDI DOHC,27088.0
+77.0,Mercedes-Benz AMG E 63 S 4MATIC,Mercedes-Benz Certified,$106,Gray Metallic,Brown,All-wheel Drive,15.0,23.0,Gasoline,9-Speed Automatic,4.0L V8 32V GDI DOHC Twin Turbo,15113.0
+78.0,Mercedes-Benz S-Class S 560 4MATIC,Used,$71,Black,Brown,All-wheel Drive,17.0,27.0,Gasoline,9-Speed Automatic,4.0L V8 32V GDI DOHC Twin Turbo,18022.0
+79.0,Hyundai Santa Fe SEL 2.4,Used,$30,Symphony Silver,Espresso,All-wheel Drive,21.0,27.0,Gasoline,8-Speed Automatic,2.4L I4 16V GDI DOHC,26693.0
+80.0,Hyundai Elantra SE,Used,$17,Quartz White Pearl,Beige,Front-wheel Drive,30.0,40.0,Gasoline,Automatic CVT,2.0L I4 16V MPFI DOHC,21368.0
+81.0,BMW X3 M40i,Used,$49,Phytonic Blue Metallic,Cognac,All-wheel Drive,21.0,27.0,Gasoline,8-Speed Automatic,3.0L I6 24V GDI DOHC Turbo,11970.0
+82.0,Volkswagen Golf R 2.0T w/DCC & Navigation,Used,$40,Indium Gray Metallic,Titan Black,All-wheel Drive,23.0,30.0,Gasoline,7-Speed Automatic with Auto-Shift,2.0L I4 16V GDI DOHC Turbo,32143.0
+83.0,Land Rover Range Rover HSE,Used,$52,Santorini Black,Ebony,Four-wheel Drive,17.0,23.0,Gasoline,Automatic,V6,84844.0
+84.0,Mercedes-Benz S-Class S 560 4MATIC,Used,$62,Black,White,All-wheel Drive,17.0,27.0,Gasoline,9-Speed Automatic,4.0L V8 32V GDI DOHC Twin Turbo,35652.0
+85.0,BMW 430 Gran Coupe i xDrive,Used,$26,Gray,Coral Red / Black,All-wheel Drive,23.0,33.0,Gasoline,8-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,39474.0
+86.0,BMW 430 Gran Coupe i xDrive,Used,$25,Gray,Golden Brown,All-wheel Drive,23.0,33.0,Gasoline,8-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,42899.0
+87.0,Mercedes-Benz GLS 450 4MATIC,Used,$56,Polar White,Ginger,All-wheel Drive,16.0,22.0,Gasoline,9-Speed Automatic,3.0L V6 24V GDI DOHC Twin Turbo,33427.0
+88.0,BMW 430 Gran Coupe i xDrive,Used,$29,Blue,Golden Brown,All-wheel Drive,23.0,33.0,Gasoline,8-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,45266.0
+89.0,Lexus LS 460 Base,Used,$17,Black,–,All-wheel Drive,16.0,23.0,Gasoline,8-Speed Automatic,4.6L V8 32V PDI DOHC,130602.0
+90.0,GMC Yukon Denali,Used,$38,Black,Black,Four-wheel Drive,15.0,21.0,Gasoline,8-Speed Automatic,6.2L V8 16V GDI OHV,36347.0
+91.0,Mercedes-Benz GLB 250 Base,Used,$42,Midnight Black,Black,Front-wheel Drive,23.0,30.0,Gasoline,8-Speed Automatic with Auto-Shift,2.0L I4 16V GDI DOHC Turbo,11140.0
+92.0,Toyota Camry SE,Used,$31,Black,Black,Front-wheel Drive,28.0,39.0,Gasoline,8-Speed Automatic,2.5L I4 16V PDI DOHC,27521.0
+93.0,Ford Edge Sport,Ford Certified,$33,White Platinum Metallic Tri-Coat,Ebony,All-wheel Drive,17.0,24.0,Gasoline,6-SPEED A/T,V6 Cylinder Engine,23046.0
+94.0,Subaru Crosstrek 2.0i Premium,Used,$28,Quartz Blue Pearl,Gray,All-wheel Drive,27.0,33.0,Gasoline,Automatic CVT,2.0L H4 16V GDI DOHC,27911.0
+95.0,Dodge Charger Scat Pack,Dodge Certified,$49,Frostbite,–,Rear-wheel Drive,15.0,24.0,Gasoline,8-Speed Automatic,6.4L V8 16V MPFI OHV,24858.0
+96.0,Dodge Charger Scat Pack,Used,$40,White Knuckle Clearcoat,Caramel / Black,Rear-wheel Drive,15.0,24.0,Gasoline,8-Speed Automatic,6.4L V8 16V MPFI OHV,21863.0
+97.0,Subaru Crosstrek Premium,Used,$26,Yellow Pearl,Black,All-wheel Drive,28.0,33.0,Gasoline,Automatic CVT,2.0L H4 16V GDI DOHC,7572.0
+98.0,Subaru Crosstrek 2.0i Premium,Used,$29,Ice Silver Metallic,Black,All-wheel Drive,27.0,33.0,Gasoline,Automatic CVT,2.0L H4 16V GDI DOHC,8832.0
+99.0,Subaru Crosstrek 2.0i Premium,Used,$27,Dark Gray Metallic,Black,All-wheel Drive,27.0,33.0,Gasoline,Automatic CVT,2.0L H4 16V GDI DOHC,70778.0
+100.0,Toyota 4Runner Limited,Toyota Certified,$51,Midnight Black Metallic,Redwood,Four-wheel Drive,16.0,19.0,Gasoline,5-Speed Automatic,4.0L V6 24V MPFI DOHC,20606.0
+101.0,Ford F-150,Used,$25,–,–,Rear-wheel Drive,15.0,22.0,E85 Flex Fuel,6-Speed Automatic,5.0L V8 32V MPFI DOHC Flexible Fuel,135228.0
+102.0,Audi Q5 2.0T Premium,Used,$35,Manhattan Gray Metallic,Black,All-wheel Drive,22.0,27.0,Gasoline,7-Speed Automatic with Auto-Shift,2.0L I4 16V GDI DOHC Turbo,36644.0
+103.0,Audi Q5 2.0T Premium,Used,$38,Brilliant Black,Black,All-wheel Drive,22.0,27.0,Gasoline,7-Speed Automatic with Auto-Shift,2.0L I4 16V GDI DOHC Turbo,21349.0
+104.0,Audi A5 2.0T Premium,Used,$14,Phantom Black Pearl,Black,All-wheel Drive,21.0,29.0,Gasoline,8-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,116693.0
+105.0,Lexus RC F Base,Used,$51,Gray,–,Rear-wheel Drive,16.0,25.0,Gasoline,8-Speed Automatic,5.0L V8 32V PDI DOHC,29597.0
+106.0,Dodge Challenger R/T,Used,$33,Burgundy,Gray,Rear-wheel Drive,15.0,23.0,Gasoline,8-Speed Automatic,5.7L V8 16V MPFI OHV,18752.0
+107.0,Mazda CX-5 Grand Touring,Used,$18,Jet Black Mica,Black,All-wheel Drive,24.0,30.0,Gasoline,6-Speed Automatic,2.5L I4 16V GDI DOHC,57000.0
+108.0,Honda Accord EX-L,Used,$21,Black,Black,Front-wheel Drive,21.0,34.0,Gasoline,6-Speed Automatic,3.5L V6 24V MPFI SOHC,92614.0
+109.0,Chevrolet Camaro 2SS,Used,$29,Gray,Adrenaline Red,Rear-wheel Drive,16.0,25.0,Gasoline,8-Speed Automatic,6.2L V8 16V GDI OHV,78378.0
+110.0,Nissan Rogue S,Used,$16,Caspian Blue,Gray,All-wheel Drive,25.0,32.0,Gasoline,Automatic CVT,2.5L I4 16V MPFI DOHC,47061.0
+111.0,Toyota Highlander SE,Used,$39,White,Almond,Front-wheel Drive,21.0,27.0,Gasoline,8-Speed Automatic,3.5L V6 24V PDI DOHC,27027.0
+112.0,Chevrolet Cruze LS,Used,$21,Silver Ice Metallic,Jet Black,Front-wheel Drive,28.0,38.0,Gasoline,6-Speed Automatic,1.4L I4 16V GDI DOHC Turbo,29865.0
+113.0,Chevrolet Traverse Premier,Used,$36,Iridescent Pearl Tricoat,Jet Black,Front-wheel Drive,18.0,27.0,Gasoline,9-Speed Automatic,3.6L V6 24V GDI DOHC,56722.0
+114.0,Nissan Murano SV,Used,$27,Deep Blue Pearl,Graphite,Front-wheel Drive,20.0,28.0,Gasoline,Automatic CVT,3.5L V6 24V MPFI DOHC,41010.0
+115.0,BMW 540 i xDrive,Used,$47,Dark Graphite Metallic,Black,All-wheel Drive,21.0,29.0,Gasoline,8-Speed Automatic,3.0L I6 24V GDI DOHC Turbo,26042.0
+116.0,Volkswagen Atlas 3.6L SEL Premium,Used,$49,Aurora Red Metallic,Titan Black / Quarzit,All-wheel Drive,16.0,22.0,Gasoline,8-Speed Automatic,3.6L V6 24V GDI DOHC,10640.0
+117.0,Chevrolet Tahoe LTZ,Used,$28,White Diamond Tri-Coat,Cocoa / Dune,Four-wheel Drive,16.0,22.0,Gasoline,6-Speed Automatic,5.3L V8 16V GDI OHV,139597.0
+118.0,Honda Civic Sport,Used,$19,White,Black,Front-wheel Drive,29.0,37.0,Gasoline,Automatic,Engine: 2.0L I-4 DOHC 16-Valve i-VTEC,20164.0
+119.0,Nissan Rogue SL,Used,$26,Magnetic Black,–,All-wheel Drive,25.0,32.0,Gasoline,Automatic CVT,2.5L I4 16V MPFI DOHC,53043.0
+120.0,Honda Pilot Special Edition,Used,$43,Steel Sapphire Metallic,Gray,All-wheel Drive,19.0,26.0,Gasoline,9-Speed Automatic,3.5L V6 24V GDI SOHC,22250.0
+121.0,Hyundai Tucson SE,Used,$18,Molten Silver,Gray,All-wheel Drive,21.0,26.0,Gasoline,6-Speed Automatic,2.0L I4 16V GDI DOHC,93960.0
+122.0,Honda Pilot Special Edition,Used,$42,–,–,All-wheel Drive,19.0,26.0,Gasoline,9-Speed Automatic,3.5L V6 24V GDI SOHC,15002.0
+123.0,Buick Enclave Essence,Used,$34,Summit White,Shale,Front-wheel Drive,18.0,26.0,Gasoline,9-Speed Automatic,3.6L V6 24V GDI DOHC,26135.0
+124.0,Buick Enclave Essence,Used,$34,Ebony Twilight Metallic,Dark Galvanized,Front-wheel Drive,18.0,26.0,Gasoline,9-Speed Automatic,3.6L V6 24V GDI DOHC,17542.0
+125.0,Jeep Wrangler Unlimited Sport,Used,$26,Firecracker Red,Black,Four-wheel Drive,16.0,21.0,Gasoline,5-Speed Automatic,3.6L V6 24V MPFI DOHC,113580.0
+126.0,Buick Enclave Essence,Used,$36,Satin Steel Metallic,Dark Galvanized,Front-wheel Drive,18.0,26.0,Gasoline,9-Speed Automatic,3.6L V6 24V GDI DOHC,29500.0
+127.0,BMW X5 M Base,Used,$70,Carbon Black Metallic,Aragon Brown,All-wheel Drive,14.0,19.0,Gasoline,8-Speed Automatic,4.4L V8 32V GDI DOHC Twin Turbo,33757.0
+128.0,Genesis GV80 2.5T,Used,$55,Himalayan Gray,Black,Rear-wheel Drive,21.0,25.0,Gasoline,8-Speed Automatic,2.5L I4 16V PDI DOHC Turbo,26663.0
+129.0,Chevrolet Tahoe Z71,Used,$70,Summit White,Black,Four-wheel Drive,16.0,20.0,Gasoline,10-Speed Automatic,5.3L V8 16V GDI OHV,24054.0
+130.0,Genesis GV80 2.5T,Used,$68,Uyuni White,Black,All-wheel Drive,21.0,25.0,Gasoline,8-Speed Automatic,2.5L I4 16V PDI DOHC Turbo,11049.0
+131.0,Acura MDX 3.5L w/Advance Package,Used,$24,Gray,Graystone,All-wheel Drive,19.0,26.0,Gasoline,9-Speed Automatic,3.5L V6 24V GDI SOHC,63014.0
+132.0,Toyota RAV4 Sport,Used,$8,Black,Black,Four-wheel Drive,21.0,28.0,Gasoline,5-Speed Automatic,3.5L V6 24V MPFI DOHC,141372.0
+133.0,Chevrolet Suburban 1500 LT,Used,$33,Black,Jet Black,Four-wheel Drive,15.0,22.0,Gasoline,6-Speed Automatic,5.3L V8 16V GDI OHV,79436.0
+134.0,Ford F-150 XLT,Used,$34,Ingot Silver Metallic,Black,Four-wheel Drive,17.0,23.0,Gasoline,6-Speed Automatic,2.7L V6 24V GDI DOHC Twin Turbo,23349.0
+135.0,Acura MDX 3.5L w/Technology Package,Used,$45,Modern Steel Metallic,Ebony,Front-wheel Drive,20.0,27.0,Gasoline,9-Speed Automatic,3.5L V6 24V GDI SOHC,15150.0
+136.0,Toyota Tundra SR5,Used,$39,Midnight Black Metallic,Black,Four-wheel Drive,13.0,17.0,Gasoline,6-Speed Automatic,5.7L V8 32V MPFI DOHC,30136.0
+137.0,Cadillac Escalade Sport,Used,$107,Black,Black,Four-wheel Drive,14.0,19.0,Gasoline,10-Speed Automatic,6.2L V8 16V GDI OHV,28000.0
+138.0,Chrysler 300 S,Used,$34,Silver Mist Clearcoat,Black,Rear-wheel Drive,19.0,30.0,Gasoline,8-Speed Automatic,5.7L V8 16V MPFI OHV,47552.0
+139.0,Chrysler 300 S,Used,$28,Bright White Clearcoat,Black,Rear-wheel Drive,19.0,30.0,Gasoline,8-Speed Automatic,3.6L V6 24V MPFI DOHC,26893.0
+140.0,Honda Civic LX,Used,$20,Gray,–,Front-wheel Drive,30.0,39.0,Gasoline,Automatic CVT,2.0L I4 16V MPFI DOHC,42836.0
+141.0,Mercedes-Benz SL-Class SL 550,Used,$39,Diamond White Metallic,Black,Rear-wheel Drive,17.0,25.0,Gasoline,Automatic,Turbocharged Gas V8 4.6L/285,45281.0
+142.0,INFINITI QX60 Pure,Used,$31,Black Obsidian,Graphite,Front-wheel Drive,20.0,27.0,Gasoline,Automatic CVT,3.5L V6 24V GDI DOHC,48522.0
+143.0,BMW X5 xDrive40i,BMW Certified,$58,Phytonic Blue Metallic,Ivory White,All-wheel Drive,20.0,26.0,Gasoline,8-Speed Automatic,3.0L I6 24V GDI DOHC Turbo,17509.0
+144.0,INFINITI QX60 Pure,Used,$29,Liquid Platinum,Graphite,Front-wheel Drive,20.0,27.0,Gasoline,Automatic CVT,3.5L V6 24V GDI DOHC,49926.0
+145.0,Kia Sorento SX,Used,$4,Titanium Silver,Black,All-wheel Drive,18.0,24.0,Gasoline,Automatic,3.5L DOHC dual CVVT 24-valve V6 engine,213000.0
+146.0,Honda Civic Sport,Used,$24,Lunar Silver Metallic,–,Front-wheel Drive,25.0,36.0,Gasoline,5-SPEED M/T,4 Cylinder Engine,49051.0
+147.0,Ford Taurus SES,Used,$4,Green,Tan,Front-wheel Drive,20.0,27.0,Gasoline,4-Speed Automatic,3.0L V6 24V MPFI DOHC,83368.0
+148.0,Lexus RX 350 Base,Used,$47,Atomic Silver,Black,All-wheel Drive,19.0,26.0,Gasoline,8-Speed Automatic,3.5L V6 24V PDI DOHC,10913.0
+149.0,Kia Sorento LX,Used,$28,Gray,Black,Front-wheel Drive,22.0,29.0,Gasoline,6-Speed Automatic,2.4L I4 16V GDI DOHC,21055.0
+150.0,Toyota Tundra SR5,Toyota Certified,$39,Super White,Graphite,Four-wheel Drive,14.0,18.0,Gasoline,6-Speed Automatic,4.6L V8 32V MPFI DOHC,36236.0
+151.0,Lexus LS 460 Base,Used,$19,Black Metallic,Beige,Rear-wheel Drive,16.0,24.0,Gasoline,8-Speed Automatic,4.6L V8 32V PDI DOHC,97315.0
+152.0,Chevrolet Silverado 1500 Custom,Used,$30,Shadow Gray Metallic,Gideon,Rear-wheel Drive,16.0,21.0,Gasoline,6-Speed Automatic,4.3L V6 12V GDI OHV,44844.0
+153.0,BMW 328 i,Used,$15,White,Brown,Rear-wheel Drive,23.0,35.0,Gasoline,8-Speed Automatic,2.0L 4-Cylinder DOHC 16V Turbocharged,48478.0
+154.0,Porsche Macan GTS,Porsche Certified,$84,White,Black,All-wheel Drive,17.0,22.0,Gasoline,7-Speed Automatic with Auto-Shift,2.9L V6 24V GDI DOHC Twin Turbo,7484.0
+155.0,Land Rover Range Rover Sport HSE Silver Edition,Used,$86,Eiger Grey,Ebony,Four-wheel Drive,19.0,24.0,Gasoline,Automatic,V6,14829.0
+156.0,BMW 320 320i xDrive,Used,$22,Black Sapphire Metallic,Black,All-wheel Drive,23.0,34.0,Gasoline,Automatic,Engine: 2.0L TwinPower Turbo 4-Cylinder 16V DOHC,31948.0
+157.0,BMW 540 i,Used,$22,Green,Beige,Rear-wheel Drive,15.0,23.0,Gasoline Fuel,6-Speed M/T,290.0HP 4.4L 8 Cylinder Engine Gasoline Fuel,81467.0
+158.0,Porsche Cayenne Base,Used,$28,Moonlight Blue Metallic,BROWN,All-wheel Drive,19.0,24.0,Gasoline,8 speed tiptronic s automatic,V6 Cylinder Engine,53065.0
+159.0,Mazda Mazda3 AWD w/Preferred Package,Used,$16,Soul Red Crystal Metallic,Black,All-wheel Drive,25.0,33.0,Gasoline,6-Speed Automatic,2.5L I4 16V GDI DOHC,15875.0
+160.0,BMW 320 i xDrive,Used,$24,Black,Venetian Beige,All-wheel Drive,23.0,34.0,Gasoline,8-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,65946.0
+161.0,Genesis G80 3.8,Used,$38,Black,–,All-wheel Drive,18.0,24.0,Gasoline,8-Speed Automatic,3.8L V6 24V GDI DOHC,20870.0
+162.0,Hyundai Santa Fe SEL 2.4,Used,$28,Twilight Black,Espresso,All-wheel Drive,21.0,27.0,Gasoline,8-Speed Automatic,2.4L I4 16V GDI DOHC,28466.0
+163.0,Hyundai Santa Fe SEL 2.4,Used,$31,Blue,Black,All-wheel Drive,21.0,27.0,Gasoline,8-Speed Automatic,2.4L I4 16V GDI DOHC,13924.0
+164.0,Tesla Model Y Long Range,Used,$65,Blue,–,All-wheel Drive,127.0,114.0,Electric,1-Speed Automatic,Electric,9561.0
+165.0,Mercedes-Benz S-Class S 560 4MATIC,Mercedes-Benz Certified,$71,BL,Brown,All-wheel Drive,17.0,27.0,Gasoline,9-Speed Automatic,4.0L V8 32V GDI DOHC Twin Turbo,25046.0
+166.0,Toyota Highlander Base Plus,Used,$20,Black,Black,All-wheel Drive,17.0,22.0,Gasoline,5-Speed Automatic,3.5L V6 24V MPFI DOHC,60419.0
+167.0,Jeep Grand Cherokee Altitude,Used,$33,Black,Black,Four-wheel Drive,18.0,25.0,Gasoline,8-Speed Automatic,3.6L V6 24V MPFI DOHC,25815.0
+168.0,Acura MDX 3.5L,Used,$39,Platinum White Pearl,Ebony,All-wheel Drive,19.0,26.0,Gasoline,9-Speed Automatic,3.5L V6 24V GDI SOHC,12374.0
+169.0,BMW M3 Base,Used,$55,Gray,Sakhir Orange,Rear-wheel Drive,17.0,26.0,Gasoline,7-Speed Automatic with Auto-Shift,3.0L I6 24V GDI DOHC Twin Turbo,19847.0
+170.0,Toyota Tacoma SR,Used,$33,Midnight Black Metallic,Cement,Four-wheel Drive,18.0,22.0,Gasoline,6-Speed Automatic,3.5L V6 24V PDI DOHC,18675.0
+171.0,Acura MDX 3.5L w/Technology Package,Used,$39,Gray,Espresso,All-wheel Drive,19.0,26.0,Gasoline,9-Speed Automatic,3.5L V6 24V GDI SOHC,12304.0
+172.0,Tesla Model Y Long Range,Used,$71,Pearl White Multi,White / Black,All-wheel Drive,131.0,117.0,Electric,1-Speed Automatic,Electric,15002.0
+173.0,Porsche Boxster S,Used,$57,Black,Black,Rear-wheel Drive,20.0,28.0,Gasoline,7-Speed Automatic with Auto-Shift,3.4L H6 24V GDI DOHC,23698.0
+174.0,Mazda Mazda6 s Grand Touring,Used,$9,Black Cherry Metallic,Black,Front-wheel Drive,17.0,25.0,Gasoline,6-Speed Automatic,3.7L V6 24V MPFI DOHC,97978.0
+175.0,Toyota 4Runner Limited,Used,$39,Black,Black,Four-wheel Drive,17.0,20.0,Gasoline,5-Speed Automatic,4.0L V6 24V MPFI DOHC,46525.0
+176.0,Subaru Forester,Used,$26,Ice Silver Metallic,Black,All-wheel Drive,26.0,33.0,Gasoline,Automatic CVT,2.5L H4 16V GDI DOHC,30403.0
+177.0,Cadillac XT5 Premium Luxury,Cadillac Certified,$33,Stellar Black Metallic,Jet Black,Front-wheel Drive,19.0,26.0,Gasoline,8-Speed Automatic,3.6L V6 24V GDI DOHC,45313.0
+178.0,Tesla Model Y Long Range,Used,$73,White,White / Black,All-wheel Drive,127.0,114.0,Electric,1-Speed Automatic,Electric,12332.0
+179.0,BMW X3 sDrive30i,Used,$35,Phytonic Blue Metallic,Canberra Beige,Rear-wheel Drive,23.0,30.0,Gasoline,8-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,34565.0
+180.0,BMW X3 sDrive30i,Used,$31,Jet Black,Black,Rear-wheel Drive,23.0,30.0,Gasoline,8-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,57583.0
+181.0,Toyota 4Runner Limited,Used,$24,Silver,Black / Graphite,Four-wheel Drive,17.0,22.0,Gasoline,5-Speed Automatic,4.0L V6 24V MPFI DOHC,151989.0
+182.0,Honda Civic EX-T,Used,$26,Crystal Black Pearl,–,Front-wheel Drive,31.0,40.0,Gasoline,Automatic CVT,1.5L I4 16V GDI DOHC Turbo,12123.0
+183.0,BMW X5 xDrive40i,Used,$54,White,Black,All-wheel Drive,20.0,26.0,Gasoline,8-Speed Automatic,3.0L I6 24V GDI DOHC Turbo,14950.0
+184.0,Toyota Corolla SE,Used,$18,Blue,Black,Front-wheel Drive,31.0,40.0,Gasoline,Automatic CVT,2.0L I4 16V PDI DOHC,10514.0
+185.0,Toyota 4Runner Limited,Toyota Certified,$42,Black,Black Graphite,Four-wheel Drive,17.0,20.0,Gasoline,5-Speed Automatic,4.0L V6 24V MPFI DOHC,39866.0
+186.0,Ford Expedition Max Limited,Used,$49,Black,–,Rear-wheel Drive,17.0,23.0,Gasoline,10-Speed Automatic,3.5L V6 24V GDI DOHC Twin Turbo,59742.0
+187.0,Honda Pilot Elite,Used,$41,Crystal Black Pearl,Black,All-wheel Drive,19.0,26.0,Gasoline,9-Speed Automatic,3.5L V6 24V GDI SOHC,3756.0
+188.0,Honda Pilot Elite,Used,$40,Gray,Gray,All-wheel Drive,19.0,26.0,Gasoline,9-Speed Automatic,3.5L V6 24V GDI SOHC,4084.0
+189.0,Subaru Forester 2.5i,Used,$8,Burnished Bronze Metallic,Dark Gray,All-wheel Drive,24.0,32.0,Gasoline,Automatic CVT,2.5L H4 16V MPFI DOHC,154866.0
+190.0,Subaru Forester Sport,Used,$29,Dark Blue Pearl,Gray,All-wheel Drive,26.0,33.0,Gasoline,Automatic CVT,2.5L H4 16V GDI DOHC,13925.0
+191.0,Ford Edge Titanium,Used,$34,Agate Black,Ebony,All-wheel Drive,21.0,28.0,Gasoline,8-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,60802.0
+192.0,Subaru Ascent Touring 7-Passenger,Used,$42,Cinnamon Brown Pearl,Java Brown,All-wheel Drive,20.0,26.0,Gasoline,Automatic CVT,2.4L H4 16V GDI DOHC Turbo,12090.0
+193.0,Chevrolet Silverado 1500 RST,Used,$47,–,–,Four-wheel Drive,19.0,22.0,Gasoline,8-Speed Automatic,5.3L V8 16V GDI OHV,26589.0
+194.0,Lexus RX 450hL Base,Used,$56,Matador Red Mica,Parchment,All-wheel Drive,29.0,28.0,Hybrid,Automatic CVT,3.5L V6 24V PDI DOHC Hybrid,11559.0
+195.0,Subaru Forester Premium,Used,$28,Crystal Black Silica,Black,All-wheel Drive,26.0,33.0,Gasoline,Automatic CVT,2.5L H4 16V GDI DOHC,14634.0
+196.0,Volvo XC60 T5 Inscription,Used,$40,Onyx Black,Blond,Front-wheel Drive,22.0,29.0,Gasoline,8-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,34148.0
+197.0,Volvo XC60 T5 Momentum,Volvo Certified,$43,Onyx Black Metallic,Charcoal,Front-wheel Drive,22.0,29.0,Gasoline,8-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,32356.0
+198.0,Volvo XC40 T5 R-Design,Used,$42,Crystal White,Charcoal,All-wheel Drive,23.0,31.0,Gasoline,8-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,15038.0
+199.0,BMW X5 sDrive40i,Used,$55,Jet Black,Canberra Beige,Rear-wheel Drive,21.0,26.0,Gasoline,8-Speed Automatic,3.0L I6 24V GDI DOHC Turbo,31831.0
+200.0,Mazda CX-5 Grand Touring,Used,$29,Jet Black Mica,Black,Front-wheel Drive,25.0,31.0,Gasoline,6-Speed Automatic,2.5L I4 16V GDI DOHC,30322.0
+201.0,Toyota 4Runner Limited,Used,$46,Midnight Black Metallic,Black Graphite,Four-wheel Drive,17.0,20.0,Gasoline,5-Speed Automatic,4.0L V6 24V MPFI DOHC,39855.0
+202.0,BMW M850 i xDrive,Used,$77,Carbon Black Metallic,Fiona Red,All-wheel Drive,18.0,25.0,Gasoline,8-Speed Automatic,4.4L V8 32V GDI DOHC Twin Turbo,34021.0
+203.0,Dodge Challenger SXT,Dodge Certified,$30,Indigo Blue,Black,Rear-wheel Drive,19.0,30.0,Gasoline,8-Speed Automatic,3.6L V6 24V MPFI DOHC,33296.0
+204.0,Tesla Model 3 Performance,Used,$65,Pearl White Multi,White / Black,All-wheel Drive,118.0,107.0,Gasoline,1-Speed Automatic,10 Cylinder,32600.0
+205.0,Hyundai Santa Fe Limited Ultimate,Used,$24,Monaco White,Gray,All-wheel Drive,17.0,22.0,Gasoline,6-Speed Automatic,3.3L V6 24V GDI DOHC,32770.0
+206.0,Dodge Challenger SXT,Used,$32,Smoke Show,Black,Rear-wheel Drive,19.0,30.0,Gasoline,8-Speed Automatic,3.6L V6 24V MPFI DOHC,20396.0
+207.0,Ford F-150 XLT,Used,$42,Silver,Black,Four-wheel Drive,18.0,23.0,Gasoline,Automatic with Overdrive,2.7L V6 24V PDI DOHC Twin Turbo,19615.0
+208.0,BMW 330 i xDrive,Used,$39,Jet Black,Black,All-wheel Drive,25.0,34.0,Gasoline,8-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,39669.0
+209.0,Honda CR-V EX,Used,$28,Gunmetal Metallic,Gray,Front-wheel Drive,28.0,34.0,Gasoline,Automatic CVT,1.5L I4 16V GDI DOHC Turbo,30340.0
+210.0,Toyota 4Runner Trail Premium,Used,$36,–,–,4,17.0,21.0,Gasoline,5-Speed Automatic,4.0L V6 24V MPFI DOHC,50116.0
+211.0,Acura MDX 3.5L w/Technology Package,Used,$41,Majestic Black Pearl,Ebony,Front-wheel Drive,20.0,27.0,Gasoline,9-Speed Automatic,3.5L V6 24V GDI SOHC,30260.0
+212.0,Subaru Impreza 2.0i,Used,$16,Blue,Ivory,All-wheel Drive,28.0,38.0,Gasoline,CVT 7-Speed,4 Cylinder Engine,40060.0
+213.0,Toyota Highlander Base,Used,$5,Tan,Tan,Front-wheel Drive,23.0,23.0,Gasoline,Automatic 5-Speed,3.3L V6,204440.0
+214.0,Lexus RX 300,Used,$9,Blue,Black,All-wheel Drive,18.0,22.0,Gasoline,4-Speed Automatic,3.0L V6 24V MPFI DOHC,77792.0
+215.0,Honda CR-V EX-L,Honda Certified,$34,Modern Steel Metallic,Gray,All-wheel Drive,27.0,33.0,Gasoline,Automatic CVT,1.5L I4 16V GDI DOHC Turbo,36188.0
+216.0,Toyota 4Runner SR5,Used,$37,White,Gray,Rear-wheel Drive,17.0,21.0,Gasoline,5-Speed Automatic,4.0L V6 24V MPFI DOHC,37750.0
+217.0,Chevrolet Impala Premier 2LZ,Used,$26,Silver Ice Metallic,Jet Black,Front-wheel Drive,19.0,28.0,Gasoline,6-Speed Automatic,3.6L V6 24V GDI DOHC,55545.0
+218.0,BMW X7 xDrive50i,Used,$81,Mineral White Metallic,Tartufo,All-wheel Drive,15.0,21.0,Gasoline,8-Speed Automatic,4.4L V8 32V GDI DOHC Twin Turbo,27289.0
+219.0,Mercedes-Benz S-Class S 550 4MATIC,Used,$15,Blue,Brown,All-wheel Drive,14.0,20.0,Gasoline,7-Speed Automatic,5.5L V8 32V MPFI DOHC,89247.0
+220.0,Nissan Rogue SL,Used,$21,Gun Metallic,Charcoal,All-wheel Drive,25.0,32.0,Gasoline,Automatic CVT,2.5L I4 16V MPFI DOHC,75290.0
+221.0,Volkswagen Atlas 3.6L SEL Premium,Used,$47,Platinum Gray Metallic,Mauro Brown,All-wheel Drive,16.0,22.0,Gasoline,8-Speed Automatic,3.6L V6 24V GDI DOHC,17123.0
+222.0,Acura TLX FWD,Acura Certified,$31,Majestic Black Pearl,Ebony,Front-wheel Drive,23.0,33.0,Gasoline,8-Speed Automatic with Auto-Shift,2.4L I4 16V GDI DOHC,37033.0
+223.0,Toyota 4Runner Limited,Used,$46,Midnight Black Metallic,Redwood,Four-wheel Drive,17.0,20.0,Gasoline,5-Speed Automatic,4.0L V6 24V MPFI DOHC,16854.0
+224.0,Toyota RAV4 XLE,Used,$28,Burgundy,Black,Front-wheel Drive,23.0,30.0,Gasoline,6-Speed Automatic,2.5L I4 16V MPFI DOHC,17590.0
+225.0,Honda Accord EX-L 1.5T,Used,$20,Black,Black,Front-wheel Drive,30.0,38.0,Gasoline,Automatic,Engine: 1.5T I-4 DOHC 16-Valve Turbocharged VTEC,75592.0
+226.0,Mercedes-Benz GLE 350 Base 4MATIC,Used,$53,Polar White,Black,All-wheel Drive,19.0,26.0,Gasoline,9-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,31179.0
+227.0,BMW 330 i,Used,$39,Black Sapphire Metallic,Cognac,Rear-wheel Drive,26.0,36.0,Gasoline,8-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,19377.0
+228.0,BMW X3 M40i,Used,$47,Alpine White,Black,All-wheel Drive,20.0,27.0,Gasoline,8-Speed Automatic,3.0L I6 24V GDI DOHC Turbo,33855.0
+229.0,Audi Q3 45 S line Premium,Used,$44,Ibis White,Okapi Brown,All-wheel Drive,20.0,28.0,Gasoline,7-Speed Automatic,I4,12051.0
+230.0,Audi Q3 45 S line Premium,Used,$44,Glacier White Metallic,Okapi Brown,All-wheel Drive,20.0,28.0,Gasoline,7-Speed Automatic,I4,13109.0
+231.0,Mercedes-Benz GLC 300 Base 4MATIC,Mercedes-Benz Certified,$40,Black,Silk Beige / Black,All-wheel Drive,22.0,27.0,Gasoline,9-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,19782.0
+232.0,BMW X5 PHEV xDrive45e,Used,$71,Blue,Brown,All-wheel Drive,0.0,0.0,Plug-In Electric/Gas,Transmission w/Dual Shift Mode,389.0HP 3.0L Straight 6 Cylinder Engine Plug-In Electric/Gas,10500.0
+233.0,Genesis GV80 2.5T,Used,$52,Lima Red,Black,Rear-wheel Drive,21.0,25.0,Gasoline,8-Speed Automatic,2.5L I4 16V PDI DOHC Turbo,6914.0
+234.0,Audi S5 3.0T Prestige,Used,$44,Gray,Magma Red,All-wheel Drive,21.0,30.0,Gasoline,8-Speed Automatic,3.0L V6 24V GDI DOHC Turbo,49950.0
+235.0,Honda Pilot EX-L,Used,$36,Deep Scarlet Pearl,Beige,Front-wheel Drive,19.0,27.0,Gasoline,6-Speed Automatic,3.5L V6 24V GDI SOHC,36790.0
+236.0,Mercedes-Benz GLC 300 Base 4MATIC,Used,$37,Gray,Black,All-wheel Drive,22.0,27.0,Gasoline Fuel,9-Speed A/T,241.0HP 2.0L 4 Cylinder Engine Gasoline Fuel,10662.0
+237.0,Chevrolet Spark LS,Used,$13,Gray,Gray,Front-wheel Drive,30.0,38.0,Gasoline,Automatic CVT,1.4L I4 16V MPFI DOHC,14035.0
+238.0,Hyundai Elantra SE,Used,$21,Phantom Black,Black,Front-wheel Drive,29.0,38.0,Gasoline,6-Speed Automatic,2.0L I4 16V MPFI DOHC,11326.0
+239.0,Hyundai Elantra SE,Used,$18,Phantom Black,Gray,Front-wheel Drive,29.0,38.0,Gasoline,6-Speed Automatic,2.0L I4 16V MPFI DOHC,43148.0
+240.0,Chevrolet Suburban 1500 LT,Used,$32,Black,Gray,Four-wheel Drive,15.0,22.0,Gasoline,6-Speed Automatic,5.3L V8 16V GDI OHV,89990.0
+241.0,Mercedes-Benz S-Class S 550 4MATIC,Used,$25,Metallic,Ash / Grey,All-wheel Drive,15.0,24.0,Gasoline,7-Speed Automatic,4.7L V8 32V GDI DOHC Twin Turbo,59725.0
+242.0,Nissan Frontier PRO-4X,Used,$38,Glacier White,–,Four-wheel Drive,17.0,23.0,Gasoline,9-Speed Automatic,3.8L V6 24V GDI DOHC,11510.0
+243.0,Honda Accord EX-L 1.5T,Used,$18,Modern Steel Metallic,Gray,Front-wheel Drive,30.0,38.0,Gasoline,–,Engine: 1.5T I-4 DOHC 16-Valve Turbocharged VTEC,87091.0
+244.0,Jeep Grand Cherokee Limited,Used,$35,Granite Crystal Clearcoat Metallic,Black,Four-wheel Drive,18.0,25.0,Gasoline,8-Speed Automatic,3.6L V6 24V MPFI DOHC,32858.0
+245.0,Mazda CX-5 Grand Touring,Used,$27,Jet Black Mica,Parchment,Front-wheel Drive,25.0,31.0,Gasoline,6-Speed Automatic,2.5L I4 16V GDI DOHC,23639.0
+246.0,BMW 128 128i,Used,$8,Black Sapphire Metallic,Black,Rear-wheel Drive,18.0,28.0,Gasoline,Automatic,3.0L DOHC 24-valve I6 engine -inc: double-VANOS steplessly varia,94876.0
+247.0,Land Rover Range Rover,Used,$49,Corris Grey,Ebony / Ebony,Four-wheel Drive,14.0,19.0,Gasoline,8-Speed Automatic,5.0L V8 32V GDI DOHC Supercharged,73178.0
+248.0,Ford F-150 Lariat,Used,$19,Black,Pale Adobe,Four-wheel Drive,0.0,0.0,E85 Flex Fuel,Automatic,5.0L V8 FFV engine,141281.0
+249.0,Lexus LS 430 Base (A6),Used,$14,Crystal White,Saddle,Rear-wheel Drive,18.0,25.0,Gasoline,6-Speed Automatic,4.3L V8 32V MPFI DOHC,90908.0
+250.0,Lexus RX 350 Base,Used,$47,White,Black,All-wheel Drive,19.0,26.0,Gasoline,8-Speed Automatic,3.5L V6 24V PDI DOHC,17212.0
+251.0,Audi A7 3.0T Prestige,Used,$47,Mythos Black Metallic,–,All-wheel Drive,20.0,30.0,Gasoline,8-Speed Automatic,3.0L V6 24V GDI DOHC Supercharged,21603.0
+252.0,Mazda Mazda6 Sport,Used,$30,Jet Black Mica,Parchment,Front-wheel Drive,23.0,31.0,Gasoline,6-Speed Automatic,2.5L I4 16V,35332.0
+253.0,Hyundai Sonata Hybrid SE,Used,$18,Diamond White Pearl,Gray,Front-wheel Drive,40.0,44.0,Hybrid,6-Speed Automatic,2.0L I4 16V GDI DOHC Hybrid,72278.0
+254.0,Alfa Romeo Giulia Ti,Used,$29,Gray,Black,All-wheel Drive,23.0,31.0,Gasoline Fuel,Transmission w/Dual Shift Mode,280.0HP 2.0L 4 Cylinder Engine Gasoline Fuel,22855.0
+255.0,Mercedes-Benz CLA 250 Base,Mercedes-Benz Certified,$30,Polar White,–,Front-wheel Drive,24.0,37.0,Gasoline,7-Speed Automatic with Auto-Shift,2.0L I4 16V GDI DOHC Turbo,30820.0
+256.0,Toyota Corolla LE,Used,$13,Aqua,Gray,Front-wheel Drive,28.0,36.0,Gasoline,CVT,1.8L I4 DOHC Dual VVT-i,54898.0
+257.0,Acura MDX 3.5L w/Technology Package,Used,$19,Charcoal,Ebony,Front-wheel Drive,19.0,27.0,Gasoline,9-Speed Automatic,3.5L V6 24V GDI SOHC,71815.0
+258.0,Nissan Rogue SV,Nissan Certified,$19,Magnetic Black,Charcoal,All-wheel Drive,25.0,32.0,Gasoline,Automatic CVT,2.5L I4 16V MPFI DOHC,74430.0
+259.0,Honda Civic LX,Used,$23,Modern Steel Metallic,Black,Front-wheel Drive,0.0,38.0,Gasoline,Variable,Regular Unleaded I-4 2.0 L/122,29879.0
+260.0,Lexus RX 350 Base (A5),Used,$11,Blue,Beige,All-wheel Drive,17.0,22.0,Gasoline,5-Speed Automatic,3.5L V6 24V MPFI DOHC,90958.0
+261.0,Honda Odyssey EX-L,Honda Certified,$38,Pacific Pewter Metallic,Mocha,Front-wheel Drive,19.0,28.0,Gasoline,9-Speed Automatic,3.5L V6 24V GDI SOHC,14494.0
+262.0,BMW X5 xDrive40i,Used,$56,Black Sapphire Metallic,Black,All-wheel Drive,20.0,26.0,Gasoline,8-Speed Automatic,3.0L I6 24V GDI DOHC Turbo,18031.0
+263.0,Acura ILX Premium & A-SPEC Packages,Used,$30,Platinum White Pearl,Red,Front-wheel Drive,24.0,34.0,Gasoline,8-Speed Automatic with Auto-Shift,2.4L I4 16V GDI DOHC,29085.0
+264.0,Toyota Highlander Limited w/3rd Row,Used,$11,Black,Ash,Four-wheel Drive,18.0,24.0,Gasoline,Automatic,3.3L DOHC SFI 24-valve VVT-i V6 engine,96442.0
+265.0,BMW M550 i Xdrive,Used,$44,Black,Black,All-wheel Drive,18.0,25.0,Gasoline,sport automatic,8 Cylinder Engine,38336.0
+266.0,Subaru Forester,Subaru Certified,$27,Crystal Black Silica,Gray,All-wheel Drive,26.0,33.0,Gasoline,Automatic CVT,2.5L H4 16V GDI DOHC,12679.0
+267.0,Subaru Forester,Used,$23,Crystal White Pearl,Gray,All-wheel Drive,26.0,33.0,Gasoline,Automatic CVT,2.5L H4 16V GDI DOHC,10460.0
+268.0,BMW M4 Base,Used,$72,White,–,Rear-wheel Drive,18.0,25.0,Gasoline,Manual,3.0L I6 24V GDI DOHC Twin Turbo,6626.0
+269.0,Volkswagen Tiguan 2.0T SE,Volkswagen Certified,$26,Deep Black Pearl Effect,Black,All-wheel Drive,21.0,29.0,Gasoline,8-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,28601.0
+270.0,Cadillac XT6 Premium Luxury AWD,Used,$59,Stellar Black Metallic,Dark Auburn,All-wheel Drive,18.0,25.0,Gasoline,9-Speed Automatic,3.6L V6 24V GDI DOHC,10932.0
+271.0,Chevrolet Blazer Premier,Used,$48,Black,Jet Black,Front-wheel Drive,19.0,26.0,Gasoline,9-Speed Automatic,3.6L V6 24V GDI DOHC,11843.0
+272.0,Honda CR-V EX-L,Used,$29,–,–,Front-wheel Drive,28.0,34.0,Gasoline,Automatic CVT,1.5L I4 16V GDI DOHC Turbo,21868.0
+273.0,Porsche 911 Targa 4,Used,$72,Blue,Black,All-wheel Drive,18.0,25.0,Gasoline,7-Speed Automatic with Auto-Shift,3.6L H6 24V GDI DOHC,41198.0
+274.0,Mercedes-Benz C-Class C 300,Mercedes-Benz Certified,$33,Black,–,Rear-wheel Drive,23.0,34.0,Gasoline,9-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,35825.0
+275.0,Mercedes-Benz E-Class E 400,Used,$20,Steel Gray Metallic,–,Rear-wheel Drive,20.0,29.0,Gasoline,7-Speed Automatic,3.0L V6 24V GDI DOHC Twin Turbo,102893.0
+276.0,Audi A3 2.0T Prestige,Used,$31,Florett Silver Metallic,Black,All-wheel Drive,24.0,31.0,Gasoline,6-Speed Automatic with Auto-Shift,2.0L I4 16V GDI DOHC Turbo,64403.0
+277.0,Jeep Grand Cherokee Limited,Used,$27,Granite Crystal Clearcoat Metallic,Black,Rear-wheel Drive,19.0,26.0,Gasoline,8-Speed Automatic,3.6L V6 24V MPFI DOHC,16929.0
+278.0,Subaru Outback 2.5i Limited,Used,$29,Crystal White Pearl,Black,All-wheel Drive,25.0,32.0,Gasoline,Automatic CVT,2.5L H4 16V MPFI DOHC,47445.0
+279.0,Mazda CX-5 Grand Touring,Used,$27,Jet Black Mica,Parchment,Front-wheel Drive,25.0,31.0,Gasoline,6-Speed Automatic,2.5L I4 16V GDI DOHC,37852.0
+280.0,Porsche Cayenne S,Used,$34,White,Black,All-wheel Drive,17.0,24.0,Gasoline,8-Speed Automatic,3.6L V6 24V GDI DOHC Twin Turbo,56557.0
+281.0,BMW X5 xDrive40i,Used,$62,Alpine White,Black,All-wheel Drive,20.0,26.0,Gasoline,8-Speed Automatic,3.0L I6 24V GDI DOHC Turbo,10422.0
+282.0,Lexus RX 350 Base,Used,$18,Starfire Pearl,–,AWD,18.0,24.0,Gasoline,6-Speed Automatic,3.5L V6 24V MPFI DOHC,124282.0
+283.0,Buick LaCrosse Premium,Used,$28,Pepperdust Metallic,Light Neutral,Front-wheel Drive,21.0,31.0,Gasoline,8-Speed Automatic,3.6L V6 24V GDI DOHC,33148.0
+284.0,Cadillac XT5 Luxury,Used,$33,Stellar Black Metallic,Black,Front-wheel Drive,19.0,27.0,Gasoline,8-Speed Automatic,3.6L V6 24V GDI DOHC,39535.0
+285.0,BMW X3 xDrive30i,BMW Certified,$37,Blue Metallic,Canberra Beige,All-wheel Drive,22.0,29.0,Gasoline,8-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,32702.0
+286.0,Tesla Model Y Performance,Used,$74,Pearl White Multi,White / Black,All-wheel Drive,115.0,106.0,Electric,1-Speed Automatic,Electric,12708.0
+287.0,INFINITI QX50 ESSENTIAL,INFINITI Certified,$35,Black Obsidian,Graphite,Front-wheel Drive,24.0,31.0,Gasoline,Automatic CVT,2.0L I4 16V PDI DOHC Turbo,19527.0
+288.0,Volvo XC60 T5 Momentum,Used,$41,Pine Gray Metallic,Maroon Brown,All-wheel Drive,20.0,27.0,Gasoline,8-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,33921.0
+289.0,Dodge Challenger SXT,Used,$28,Indigo Blue,Black,Rear-wheel Drive,19.0,30.0,Gasoline,8-Speed Automatic,3.6L V6 24V MPFI DOHC,34283.0
+290.0,Audi Q5 2.0T Premium,Used,$35,Moonlight Blue Metallic,Atlas Beige / Gray,All-wheel Drive,22.0,27.0,Gasoline,7-Speed Automatic with Auto-Shift,2.0L I4 16V GDI DOHC Turbo,28251.0
+291.0,Mazda Mazda3 FWD w/Preferred Package,Used,$27,Snowflake White Pearl,Black / Navy Blue,Front-wheel Drive,26.0,35.0,Gasoline,6-Speed Automatic,2.5L I4 16V GDI DOHC,11945.0
+292.0,Kia Forte FE,Used,$16,Black,Gray,Front-wheel Drive,31.0,41.0,Gasoline,Automatic CVT,2.0L I4 16V MPFI DOHC,14606.0
+293.0,Audi Q5 2.0T Premium,Used,$35,Ibis White,Black,All-wheel Drive,22.0,27.0,Gasoline,7-Speed Automatic with Auto-Shift,2.0L I4 16V GDI DOHC Turbo,38337.0
+294.0,Nissan Murano SL,Nissan Certified,$29,Magnetic Black,Graphite,Front-wheel Drive,21.0,28.0,Gasoline,Automatic CVT,3.5L V6 24V MPFI DOHC,39336.0
+295.0,Chevrolet Corvette Stingray Z51,Used,$49,Yellow,–,Rear-wheel Drive,17.0,29.0,Gasoline,8-Speed Automatic,6.2L V8 16V GDI OHV,13053.0
+296.0,Lincoln MKZ Select,Used,$22,White,Cream,Front-wheel Drive,21.0,31.0,Gasoline,6-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,43485.0
+297.0,Volvo XC60 T5 Momentum,Used,$38,Crystal White,–,All-wheel Drive,20.0,27.0,Gasoline,8-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,31039.0
+298.0,Honda CR-V EX-L,Used,$33,Molten Lava Pearl,–,All-wheel Drive,27.0,33.0,Gasoline,Automatic CVT,1.5L I4 16V GDI DOHC Turbo,19426.0
+299.0,BMW 330 i xDrive,Used,$40,Alpine White,Black,All-wheel Drive,25.0,34.0,Gasoline,8-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,39186.0
+300.0,Tesla Model Y Long Range,Used,$74,White,Black,All-wheel Drive,131.0,117.0,Electric,1-Speed Automatic,Electric,10926.0
+301.0,Jeep Grand Cherokee Limited,Used,$34,Billet Silver Metallic Clearcoat,–,Rear-wheel Drive,19.0,26.0,Gasoline,8-Speed Automatic,3.6L V6 24V MPFI DOHC,33995.0
+302.0,Mercedes-Benz AMG GLE 43 4MATIC Coupe,Used,$67,Obsidian Black Metallic,–,All-wheel Drive,17.0,22.0,Gasoline,9-Speed Automatic,3.0L V6 24V GDI DOHC Twin Turbo,36343.0
+303.0,Ford F-150 Lariat,Used,$66,Agate Black Metallic,Black,Four-wheel Drive,19.0,24.0,Gasoline,10-Speed Automatic,5.0L V8 32V PDI DOHC,16581.0
+304.0,Volkswagen Arteon 2.0T SEL Premium R-Line,Used,$32,Manganese Gray Metallic,Titan Black,All-wheel Drive,20.0,27.0,Gasoline,8-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,46542.0
+305.0,Honda Accord LX,Used,$17,Black,Black,Front-wheel Drive,27.0,36.0,Gasoline,Automatic CVT,2.4L I4 16V GDI DOHC,65076.0
+306.0,Dodge Charger SXT,Used,$32,Pitch Black Clearcoat,Black,Rear-wheel Drive,19.0,30.0,Gasoline,8-Speed Automatic,3.6L V6 24V MPFI DOHC,32033.0
+307.0,Mercedes-Benz AMG C 43 Base 4MATIC,Mercedes-Benz Certified,$54,Black,AMG Cranberry Red,All-wheel Drive,19.0,27.0,Gasoline,9-Speed Automatic,3.0L V6 24V GDI DOHC Twin Turbo,36089.0
+308.0,Honda Pilot EX-L,Used,$34,Deep Scarlet Pearl,Beige Leather,Front-wheel Drive,19.0,27.0,Gasoline,6-SPEED A/T,V6 Cylinder Engine,38383.0
+309.0,Acura RDX Base,Used,$36,Performance Red Pearl,Parchment,All-wheel Drive,21.0,27.0,Gasoline,10-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,21316.0
+310.0,Acura RDX Base,Used,$37,Performance Red Pearl,Parchment,All-wheel Drive,21.0,27.0,Gasoline,10-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,18576.0
+311.0,Audi Q5 45 Premium,Used,$52,Mythos Black Metallic,Rock Gray,All-wheel Drive,23.0,28.0,Gasoline,7-Speed Automatic with Auto-Shift,2.0L I4 16V GDI DOHC Turbo,14222.0
+312.0,Nissan Rogue SL,Used,$22,Gun Metallic,Charcoal,All-wheel Drive,25.0,32.0,Gasoline,Automatic,Regular Unleaded I-4 2.5 L/152,54163.0
+313.0,Acura MDX 3.5L Technology & A-Spec Pkgs,Used,$46,Apex Blue Pearl,Ebony,All-wheel Drive,19.0,25.0,Gasoline,9-Speed Automatic,3.5L V6 24V GDI SOHC,21460.0
+314.0,Volkswagen Atlas 3.6L SEL Premium,Used,$47,Pure White,Titan Black / Quarzit,All-wheel Drive,16.0,22.0,Gasoline,8-Speed Automatic,3.6L V6 24V GDI DOHC,34337.0
+315.0,Volvo XC90 T6 Momentum,Used,$35,Luminous Sand,Blond,All-wheel Drive,20.0,25.0,Gasoline,8-Speed Automatic,2.0L I4 16V GDI DOHC,56044.0
+316.0,Honda Civic Sport,Honda Certified,$29,Sonic Gray Pearl,Black,Front-wheel Drive,29.0,35.0,Gasoline,Automatic CVT,1.5L I4 16V GDI DOHC Turbo,17288.0
+317.0,INFINITI QX80 Luxe,Used,$52,Champagne Quartz,Saddle Brown,Rear-wheel Drive,14.0,20.0,Gasoline,7-Speed Automatic,5.6L V8 32V GDI DOHC,27017.0
+318.0,Honda Pilot Special Edition,Used,$43,Platinum White Pearl,Black,All-wheel Drive,19.0,26.0,Gasoline,9-Speed Automatic,3.5L V6 24V GDI SOHC,6398.0
+319.0,Honda Accord LX,Honda Certified,$29,Champagne Frost Pearl,Ivory,Front-wheel Drive,30.0,38.0,Gasoline,Automatic CVT,1.5L I4 16V GDI DOHC Turbo,13112.0
+320.0,Acura MDX 3.5L,Used,$23,White,Beige,All-wheel Drive,18.0,27.0,Gasoline,6-Speed Automatic,3.5L V6 24V GDI SOHC,99697.0
+321.0,Audi Q8 3.0T Premium,Used,$62,Glacier White Metallic,Black,All-wheel Drive,17.0,22.0,Hybrid,8-Speed Automatic,3.0L V6 24V GDI DOHC Turbo Hybrid,30425.0
+322.0,Nissan Maxima 3.5 S,Used,$19,Black,Black,Front-wheel Drive,21.0,30.0,Gasoline,Automatic CVT,3.5L V6 24V MPFI DOHC,48203.0
+323.0,Chevrolet Trax LS,Chevrolet Certified,$17,Silver Ice Metallic,Black,Front-wheel Drive,25.0,33.0,Gasoline,6-Speed Automatic,1.4L I4 16V MPFI DOHC Turbo,30364.0
+324.0,Kia Telluride SX,Used,$46,Dark Moss,Black,Front-wheel Drive,20.0,26.0,Gasoline,8-Speed Automatic,3.8L V6 24V GDI DOHC,33976.0
+325.0,Chrysler 300 S,Used,$31,Velvet Red Pearlcoat,Black,All-wheel Drive,18.0,27.0,Gasoline,8-Speed Automatic,3.6L V6 24V MPFI DOHC,47004.0
+326.0,Hyundai Santa Fe Limited 2.0T,Used,$34,Portofino Gray,Black / Beige,Front-wheel Drive,20.0,27.0,Gasoline,8-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,39946.0
+327.0,Mercedes-Benz GLB 250 Base,Used,$37,Black,Black,Front-wheel Drive,23.0,30.0,Gasoline,8-Speed Automatic with Auto-Shift,2.0L I4 16V GDI DOHC Turbo,32624.0
+328.0,Ford Mustang EcoBoost Premium,Used,$21,White,–,Rear-wheel Drive,20.0,28.0,Gasoline,10-Speed Automatic,2.3L I4 16V GDI DOHC Turbo,68603.0
+329.0,Chrysler Crossfire SRT-6,Used,$24,Black,Charcoal,Rear-wheel Drive,17.0,24.0,Gasoline,5-Speed Automatic,3.2L V6 18V MPFI SOHC Supercharged,10062.0
+330.0,Ford F-150 XLT,Used,$41,Black,Black,Four-wheel Drive,18.0,23.0,Gasoline,10-Speed Automatic,2.7L V6 24V PDI DOHC Twin Turbo,46946.0
+331.0,Mercedes-Benz GLA 250 Base,Used,$43,Polar White,–,Front-wheel Drive,25.0,34.0,Gasoline,8-Speed Automatic with Auto-Shift,2.0L I4 16V GDI DOHC Turbo,10732.0
+332.0,Porsche Boxster,Used,$28,Midnight Blue Metallic,Sand Beige,Rear-wheel Drive,19.0,27.0,Gasoline,7-Speed Automatic with Auto-Shift,2.9L H6 24V MPFI DOHC,71106.0
+333.0,FIAT 500L Easy,Used,$9,Nero Puro,Black,Front-wheel Drive,25.0,33.0,Gasoline,6-Speed Manual,1.4L I4 16V MPFI SOHC Turbo,65629.0
+334.0,Honda Civic LX,Used,$15,Black,Black / Red,Front-wheel Drive,30.0,39.0,Gasoline,Automatic CVT,1.8L I4 16V MPFI SOHC,47467.0
+335.0,Honda Civic LX,Used,$19,White,Black / Ivory,Front-wheel Drive,31.0,40.0,Gasoline,Automatic CVT,2.0L I4 16V MPFI DOHC,51430.0
+336.0,Lexus GX 460 Base,Used,$49,Nebula Gray Pearl,Red,Four-wheel Drive,15.0,19.0,Gasoline,6-Speed Automatic,4.6L V8 32V MPFI DOHC,30421.0
+337.0,BMW X3 M40i,Used,$47,Carbon Black Metallic,Mocha,All-wheel Drive,20.0,27.0,Gasoline,8-Speed Automatic,3.0L I6 24V GDI DOHC Turbo,19572.0
+338.0,Porsche Macan S,Porsche Certified,$63,White,Black,All-wheel Drive,18.0,23.0,Gasoline,7-Speed Automatic with Auto-Shift,3.0L V6 24V GDI DOHC Turbo,38729.0
+339.0,Mercedes-Benz CLA 250 Base,Mercedes-Benz Certified,$29,Midnight Black,–,Front-wheel Drive,24.0,37.0,Gasoline,7-Speed Automatic with Auto-Shift,2.0L I4 16V GDI DOHC Turbo,31676.0
+340.0,BMW X5 xDrive40i,Used,$58,Jet Black,Black,All-wheel Drive,20.0,26.0,Gasoline,8-Speed Automatic,3.0L I6 24V GDI DOHC Turbo,31750.0
+341.0,Mercedes-Benz CLA 250 Base,Used,$31,Jupiter Red,–,Front-wheel Drive,24.0,37.0,Gasoline,7-Speed Automatic with Auto-Shift,2.0L I4 16V GDI DOHC Turbo,25943.0
+342.0,Mercedes-Benz GLE 350 Base 4MATIC,Used,$37,Gray,Black,All-wheel Drive,18.0,22.0,Gasoline,7-Speed Automatic,3.5L V6 24V GDI DOHC,49312.0
+343.0,BMW X5 xDrive40i,Used,$53,Black Sapphire Metallic,Ivory White,All-wheel Drive,20.0,26.0,Gasoline,8-Speed Automatic,3.0L I6 24V GDI DOHC Turbo,35662.0
+344.0,Nissan Rogue SV,Used,$18,Pearl White,Almond,All-wheel Drive,25.0,32.0,Gasoline,Automatic CVT,2.5L I4 16V MPFI DOHC,73347.0
+345.0,Nissan Rogue SV,Used,$15,Magnetic Black,Charcoal,All-wheel Drive,25.0,32.0,Gasoline,Automatic CVT,2.5L I4 16V MPFI DOHC,99498.0
+346.0,Honda Pilot Elite,Used,$34,Obsidian Blue Pearl,Gray,All-wheel Drive,19.0,26.0,Gasoline,9-Speed Automatic,3.5L V6 24V GDI SOHC,59498.0
+347.0,Nissan Rogue SV,Used,$19,Midnight Jade,Charcoal,Front-wheel Drive,26.0,33.0,Gasoline,Automatic CVT,2.5L I4 16V MPFI DOHC,43121.0
+348.0,BMW 428 i xDrive,Used,$13,Gray,Black,All-wheel Drive,22.0,33.0,Gasoline,8-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,68535.0
+349.0,Lexus RX 350 Base,Used,$11,Crystal White,Tan,All-wheel Drive,17.0,22.0,Gasoline,5-SPEED A/T,V6 Cylinder Engine,114708.0
+350.0,BMW X7 xDrive50i,Used,$69,Black Sapphire Metallic,Cognac,All-wheel Drive,15.0,21.0,Gasoline,8-Speed Automatic,4.4L V8 32V GDI DOHC Twin Turbo,46661.0
+351.0,Toyota Camry XSE,Toyota Certified,$30,Midnight Black Metallic,Black,Front-wheel Drive,28.0,39.0,Gasoline,8-Speed Automatic,2.5L I4 16V PDI DOHC,15341.0
+352.0,Audi A4 2.0T Premium,Used,$31,Ibis White,Black,All-wheel Drive,23.0,34.0,Gasoline,7-Speed Automatic with Auto-Shift,2.0L I4 16V GDI DOHC Turbo,20910.0
+353.0,Toyota Camry XSE,Used,$29,Black,Red,Front-wheel Drive,28.0,39.0,Gasoline,8-Speed Automatic,2.5L I4 16V PDI DOHC,22207.0
+354.0,BMW X5 xDrive35i,Used,$31,Black,Mocha,All-wheel Drive,18.0,24.0,Gasoline,8-Speed Automatic,3.0L I6 24V GDI DOHC Turbo,45922.0
+355.0,Hyundai Santa Fe SEL 2.4,Used,$31,Twilight Black,Espresso,All-wheel Drive,21.0,27.0,Gasoline,8-Speed Automatic,2.4L I4 16V GDI DOHC,13519.0
+356.0,Kia Telluride SX,Kia Certified,$51,Black,–,All-wheel Drive,19.0,24.0,Gasoline,8-Speed Automatic,3.8L V6 24V GDI DOHC,25593.0
+357.0,Mercedes-Benz GLC 300 Base 4MATIC,Mercedes-Benz Certified,$39,Graphite,Magma Grey,All-wheel Drive,21.0,28.0,Gasoline,9-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,44271.0
+358.0,Subaru Forester,Used,$26,Crystal Black Silica,Gray,All-wheel Drive,26.0,33.0,Gasoline,Automatic CVT,2.5L H4 16V GDI DOHC,33711.0
+359.0,Toyota 4Runner Limited,Used,$35,Gray,Redwood,Four-wheel Drive,17.0,21.0,Gasoline,5-Speed Automatic,4.0L V6 24V MPFI DOHC,53249.0
+360.0,BMW X5 xDrive40i,Used,$63,Carbon Black Metallic,Ivory White,All-wheel Drive,20.0,26.0,Gasoline,8-Speed Automatic,3.0L I6 24V GDI DOHC Turbo,30523.0
+361.0,Toyota 4Runner Limited,Used,$40,Midnight Black Metallic,Sand Beige,Four-wheel Drive,17.0,20.0,Gasoline,5-Speed Automatic,4.0L V6 24V MPFI DOHC,38530.0
+362.0,Mazda CX-5 Grand Touring,Used,$30,Jet Black Mica,Black,Front-wheel Drive,25.0,31.0,Gasoline,6-Speed Automatic,2.5L I4 16V GDI DOHC,18410.0
+363.0,GMC Yukon Denali,Used,$82,Onyx Black,–,Four-wheel Drive,14.0,19.0,Gasoline,10-Speed Automatic,6.2L V8 16V GDI OHV,33316.0
+364.0,Mercedes-Benz AMG GLE 43 4MATIC Coupe,Mercedes-Benz Certified,$61,White,Black,All-wheel Drive,17.0,22.0,Gasoline,9-Speed Automatic,3.0L V6 24V GDI DOHC Twin Turbo,36323.0
+365.0,Tesla Model Y Long Range,Used,$73,Black,–,All-wheel Drive,127.0,114.0,Electric,1-Speed Automatic,Electric,10729.0
+366.0,Ford F-150 XL,Used,$34,Shadow Black,Dark Earth Gray,Four-wheel Drive,18.0,23.0,E85 Flex Fuel,Automatic,3.3L V6 24V PDI DOHC Flexible Fuel,51960.0
+367.0,Mazda CX-9 Carbon Edition,Used,$41,Polymetal Gray Metallic,Red,All-wheel Drive,20.0,26.0,Gasoline,6-Speed Automatic,2.5L I4 16V GDI DOHC Turbo,11309.0
+368.0,Tesla Model Y Long Range,Used,$72,Midnight Silver Metallic,Black,All-wheel Drive,131.0,117.0,Electric,1-Speed Automatic,Electric,13919.0
+369.0,Toyota 4Runner Limited,Toyota Certified,$44,Midnight Black Metallic,Black,Rear-wheel Drive,16.0,19.0,Gasoline,5-Speed Automatic,4.0L V6 24V MPFI DOHC,34593.0
+370.0,Chevrolet Equinox Premier,Used,$22,Iridescent Pearl Tricoat,Jet Black,Front-wheel Drive,21.0,31.0,Gasoline,6-Speed Automatic with Overdrive,4 Cylinder Engine,50127.0
+371.0,Lexus RX 350 350,Used,$35,Eminent White Pearl,Parchment,Front-wheel Drive,20.0,27.0,Gasoline,8-Speed Automatic,3.5L V6 24V GDI DOHC,73966.0
+372.0,BMW X7 xDrive40i,Used,$71,Arctic Gray Metallic,Tartufo,All-wheel Drive,20.0,25.0,Gasoline,8-Speed Automatic,3.0L I6 24V GDI DOHC Turbo,14004.0
+373.0,Jeep Grand Cherokee Limited,Used,$39,Diamond Black,Black,Four-wheel Drive,18.0,25.0,Gasoline,8-Speed Automatic,3.6L V6 24V MPFI DOHC,39412.0
+374.0,Ford Edge Sport,Ford Certified,$42,Star White Metallic Tri-Coat,Ebony,All-wheel Drive,19.0,26.0,Gasoline,Automatic,Twin Turbo Premium Unleaded V-6 2.7 L/166,25055.0
+375.0,Lincoln Aviator Reserve AWD,Used,$58,Pristine White,–,All-wheel Drive,17.0,24.0,Gasoline,10-Speed Automatic,3.0L V6 24V GDI DOHC Twin Turbo,37414.0
+376.0,Subaru Crosstrek 2.0i Premium,Used,$19,Quartz Blue Pearl,Ivory,All-wheel Drive,26.0,34.0,Gasoline,Automatic CVT,2.0L H4 16V MPFI DOHC,94374.0
+377.0,Subaru Crosstrek 2.0i Limited,Used,$28,Sunshine Orange,Black,All-wheel Drive,27.0,33.0,Gasoline,Automatic CVT,2.0L H4 16V GDI DOHC,45209.0
+378.0,Subaru Crosstrek 2.0i Premium,Subaru Certified,$26,Quartz Blue Pearl,Gray,All-wheel Drive,23.0,29.0,Gasoline,6-Speed Manual,2.0L H4 16V GDI DOHC,39537.0
+379.0,Audi Q5 45 Prestige,Used,$49,Mythos Black Metallic,Black,All-wheel Drive,22.0,28.0,Gasoline,7-Speed Automatic with Auto-Shift,2.0L I4 16V GDI DOHC Turbo,10843.0
+380.0,Tesla Model Y Long Range,Used,$75,Pearl White Multi,Black,All-wheel Drive,131.0,117.0,Electric,1-Speed Automatic,Electric,14347.0
+381.0,Volvo V90 Cross Country T5,Used,$50,Onyx Black Metallic,Charcoal,All-wheel Drive,23.0,31.0,Gasoline,8-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,37837.0
+382.0,Honda Accord EX-L,Used,$20,Alabaster Silver Metallic,Gray,Front-wheel Drive,21.0,34.0,Gasoline,6-Speed Automatic,3.5L V6 24V MPFI SOHC,73467.0
+383.0,Toyota 4Runner Limited,Used,$48,Blizzard Pearl,Redwood,Rear-wheel Drive,16.0,19.0,Gasoline,5-Speed Automatic,4.0L V6 24V MPFI DOHC,37001.0
+384.0,Audi Q5 2.0T Premium,Used,$33,Navarra Blue Metallic,Rock Gray / Granite Gray,All-wheel Drive,22.0,27.0,Gasoline,7-Speed Automatic with Auto-Shift,2.0L I4 16V GDI DOHC Turbo,43496.0
+385.0,Nissan Murano SL,Used,$12,Graphite Blue,Beige,Front-wheel Drive,18.0,23.0,Gasoline,Automatic CVT,3.5L V6 24V MPFI DOHC,65881.0
+386.0,Toyota 4Runner Nightshade,Used,$55,Midnight Black Metallic,Black / Graphite,Four-wheel Drive,16.0,19.0,Gasoline,5-Speed Automatic,4.0L V6 24V MPFI DOHC,19814.0
+387.0,Dodge Challenger SXT,Used,$27,White Knuckle Clearcoat,Black,Rear-wheel Drive,19.0,30.0,Gasoline,8-Speed Automatic,3.6L V6 24V MPFI DOHC,19501.0
+388.0,Audi Q8 3.0T Premium,Used,$72,Carrara White,Black,All-wheel Drive,17.0,22.0,Gasoline,8-Speed Automatic,3.0L V6 24V GDI DOHC Turbo,32731.0
+389.0,Kia Telluride SX,Used,$51,Ebony Black,Gray,Front-wheel Drive,20.0,26.0,Gasoline,8-Speed Automatic,3.8L V6 24V GDI DOHC,24793.0
+390.0,Hyundai Elantra SEL,Used,$15,Electric Blue,Gray,Front-wheel Drive,28.0,37.0,Gasoline,6-Speed Automatic,2.0L I4 16V MPFI DOHC,51503.0
+391.0,Mercedes-Benz GLC 300 Base 4MATIC,Used,$51,Black,Black,All-wheel Drive,21.0,28.0,Gasoline,9-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,10769.0
+392.0,Kia Telluride SX,Used,$50,Dark Moss,Gray,Front-wheel Drive,20.0,26.0,Gasoline,8-Speed Automatic,3.8L V6 24V GDI DOHC,36411.0
+393.0,Porsche Cayenne Base,Used,$49,Mahogany Metallic,Saddle Brown,All-wheel Drive,18.0,24.0,Gasoline,8-Speed Automatic,3.6L V6 24V GDI DOHC,41125.0
+394.0,Lincoln MKZ Standard,Used,$33,White Platinum,Cappuccino,Front-wheel Drive,20.0,31.0,Gasoline,6-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,13575.0
+395.0,Honda HR-V LX,Used,$17,Gray,Black,All-wheel Drive,27.0,31.0,Gasoline,Automatic CVT,1.8L I4 16V MPFI SOHC,42436.0
+396.0,Subaru Forester 2.5i Limited,Subaru Certified,$26,Dark Gray Metallic,Gray,All-wheel Drive,26.0,32.0,Gasoline,Automatic CVT,2.5L H4 16V MPFI DOHC,51492.0
+397.0,Ford Edge ST,Used,$43,Ford Performance Blue Metallic,Ebony,All-wheel Drive,19.0,26.0,Gasoline,8-Speed Automatic,2.7L V6 24V GDI DOHC Twin Turbo,22492.0
+398.0,Hyundai Palisade Limited,Used,$45,Moonlight Cloud,Black,Front-wheel Drive,19.0,26.0,Gasoline,8-Speed Automatic,3.8L V6 24V GDI DOHC,49541.0
+399.0,Nissan Rogue SL,Used,$33,Magnetic Black Pearl,Charcoal,Front-wheel Drive,26.0,33.0,Gasoline,Automatic CVT,2.5L I4 16V MPFI DOHC,23320.0
+400.0,Buick Encore Preferred,Used,$21,Ebony Twilight Metallic,Ebony,Front-wheel Drive,25.0,30.0,Gasoline,6-Speed Automatic,1.4L I4 16V MPFI DOHC Turbo,30406.0
+401.0,Jeep Grand Cherokee Limited,Used,$33,Diamond Black,Black,Four-wheel Drive,18.0,25.0,Gasoline,8-Speed Automatic,3.6L V6 24V MPFI DOHC,43807.0
+402.0,Toyota RAV4 Hybrid XLE,Toyota Certified,$30,Super White,Nutmeg,All-wheel Drive,34.0,30.0,Hybrid,Automatic CVT,2.5L I4 16V MPFI DOHC Hybrid,41944.0
+403.0,Cadillac XT4 Sport,Used,$35,Black,Black,All-wheel Drive,22.0,29.0,Gasoline,9-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,49386.0
+404.0,Chevrolet Tahoe LTZ,Used,$35,Tungsten Metallic,Jet Black,Four-wheel Drive,16.0,22.0,Gasoline,6-Speed Automatic,5.3L V8 16V GDI OHV,115795.0
+405.0,Kia Soul +,Used,$9,Green,Black,Front-wheel Drive,23.0,28.0,Gasoline,Automatic,2.0L DOHC MPI dual-CVVT 16-valve I4 engine -inc: variable intake,47786.0
+,,,,,,,,,,,,

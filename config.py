@@ -1,0 +1,1 @@
+min_selected_elements = 1
