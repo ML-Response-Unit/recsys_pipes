@@ -1,3 +1,4 @@
+**/liked.csv
 images/*
 __pycache__
-.gitignore
+data/liked.csv
