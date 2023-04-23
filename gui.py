@@ -32,14 +32,14 @@ def intro():
                 key="intro ".join([str(x) for x in row.fillna('').values.tolist()])
                 ):
                 liked_df = liked_df.append(start_data.iloc[index], ignore_index = True)
-                liked_df.to_csv("./data/liked.csv", index=False)
+                liked_df.to_csv("./data/user_interactions.csv", index=False)
 
     st.sidebar.write(f"Liked Goods {len(liked_df)}/10")
     progress_bar = st.sidebar.progress((min(len(liked_df) / 10, 1.0)))
 
 def first():
     st.title("First Recomendation Algorithm")
-    data = pd.read_csv("./data/liked.csv")
+    data = pd.read_csv("./data/user_interactions.csv")
     st.write(data)
     for index in range(len(data)):
         row = data.iloc[index]
