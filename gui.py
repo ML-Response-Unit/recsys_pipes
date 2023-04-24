@@ -4,9 +4,12 @@ import random
 import  pandas as pd
 import os
 from config import *
+from utils.catboost_inference import CatPredictor
 
 data = pd.read_csv("data/cars_about.csv").dropna()
 centroid_car_ids = [177, 188, 270, 387, 246, 296, 187, 116, 255, 173, 259, 171,  89, 149,  90,  74, 320, 180, 149, 197, 252, 297, 291, 243, 368,  67, 228, 147, 193, 244, 211]
+
+
 liked_df = data.iloc[0:0].dropna()
 
 def intro():
@@ -31,25 +34,38 @@ def intro():
                 "Add to favorites", 
                 key="intro ".join([str(x) for x in row.fillna('').values.tolist()])
                 ):
+                # liked_df = pd.concat([start_data.iloc[index], liked_df], ignore_index=True)
+                # print(liked_df)
                 liked_df = liked_df.append(start_data.iloc[index], ignore_index = True)
-                liked_df.to_csv("./data/user_interactions.csv", index=False)
+                liked_df.to_csv(interactions_path, index=False)
+                print(liked_df)
 
-    st.sidebar.write(f"Liked Goods {len(liked_df)}/10")
-    progress_bar = st.sidebar.progress((min(len(liked_df) / 10, 1.0)))
+    st.sidebar.write(f"Liked Goods {len(liked_df)}/{min_selected_elements}")
+    progress_bar = st.sidebar.progress((min(len(liked_df) / min_selected_elements, 1.0)))
 
 def first():
-    st.title("First Recomendation Algorithm")
-    data = pd.read_csv("./data/user_interactions.csv")
-    st.write(data)
-    for index in range(len(data)):
-        row = data.iloc[index]
-        car_name = f"{row.car_model} {row.exteriorColor}".replace("/", " ")
-        st.write(f"## {car_name}")
-        st.image(os.path.join("images", car_name+".jpg"), width= 720)
+    print(os.getcwd())
+    liked_df = pd.read_csv(interactions_path)
+    cat = CatPredictor()      
 
-        with st.expander("Information"):
-            for column_name in data.columns:
-                st.write(f"{column_name}: {row[column_name]}")
+    if len(liked_df) >= cat.N_POSITIVE:       
+        start_data = data[data['car_id'].isin(cat.predict(liked_df))]
+        st.title("Catboost")
+
+        for index in range(len(start_data)):
+            row = start_data.iloc[index]
+            car_name = f"{row.car_model} {row.exteriorColor}".replace("/", " ")
+            st.write(f"## {car_name}")
+            st.image(os.path.join("images", car_name+".jpg"), width=640)
+
+            with st.expander("Information"):
+                for column_name in start_data.columns:
+                    st.write(f"{column_name}: {row[column_name]}")
+
+        st.sidebar.write(f"Liked Goods {len(liked_df)}/{min_selected_elements}")
+        st.write("\n")
+    else:
+        st.warning(f"You must add {min_selected_elements} to favorites")
 
 def second():
     st.title("second")
@@ -59,8 +75,8 @@ def third():
 
 
 page_names_to_funcs = {
-    "Introduction": intro,
-    "first algorithm": first,
+    "Cold start": intro,
+    "catboost": first,
     "second algorithm":second,
     "third algorithm": third
 }

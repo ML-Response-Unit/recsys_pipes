@@ -11,11 +11,11 @@ from catboost import CatBoostClassifier
 from catboost import Pool
 from sklearn.metrics import accuracy_score
 
-cars_data = pd.read_csv("../data/cars_about.csv").dropna()
-encoded_cars_data = pd.read_csv("../data/cars_data_prepared.csv")
+cars_data = pd.read_csv("./data/cars_about.csv").dropna()
+encoded_cars_data = pd.read_csv("./data/cars_data_prepared.csv")
 
 class CatPredictor:
-    def __init__(self, catboost_path="../weights/catboost"):
+    def __init__(self, catboost_path="./weights/catboost"):
         self.catboost = CatBoostClassifier().load_model(catboost_path)
         self.N_POSITIVE = 5
         
@@ -48,12 +48,12 @@ class CatPredictor:
 
         return batch
     
-    def predict(self, user_interactions_path="../data/user_interactions.csv"):
-        user_interactions = pd.read_csv(user_interactions_path)
+    def predict(self, user_interactions):
         assert len(user_interactions) >= self.N_POSITIVE
         user_interactions = self._preprocess_user_interactions(user_interactions)
         batch = self._create_batch(user_interactions)
-        return self.catboost.predict_proba(batch)
+        return self.catboost.predict(batch).nonzero()[0].tolist()
 
-catpred = CatPredictor()
-print(catpred.predict())
+if __name__ == "__main__":
+    catpred = CatPredictor()
+    preds = catpred.predict()
