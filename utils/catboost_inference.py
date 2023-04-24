@@ -1,18 +1,9 @@
 import pandas as pd
-import numpy as np
-import plotly.express as px
-import pandas as pd
-from sklearn.metrics.pairwise import cosine_similarity
-from sklearn.neighbors import NearestNeighbors
-from sklearn.preprocessing import StandardScaler, LabelEncoder
-from sklearn.cluster import Birch
-from catboost import CatBoostRegressor
 from catboost import CatBoostClassifier
-from catboost import Pool
-from sklearn.metrics import accuracy_score
+from config import * 
 
-cars_data = pd.read_csv("./data/cars_about.csv").dropna()
-encoded_cars_data = pd.read_csv("./data/cars_data_prepared.csv")
+cars_data = pd.read_csv(car_data_path).dropna()
+encoded_cars_data = pd.read_csv(encoded_cars_data_path)
 
 class CatPredictor:
     def __init__(self, catboost_path="./weights/catboost"):

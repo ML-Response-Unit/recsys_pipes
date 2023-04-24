@@ -1,6 +1,7 @@
 car_id,car_model,used_label,price,exteriorColor,interiorColor,drivetrain,minMPG,maxMPG,fuelType,transmission,engine,mileage
-67.0,Subaru Impreza 2.0i Premium,Used,$4,Ice Silver Metallic,Black,All-wheel Drive,28.0,36.0,Gasoline,Automatic CVT,2.0L H4 16V GDI DOHC,67792.0
-74.0,BMW X5 xDrive35i Premium,Used,$12,Black,Brown,All-wheel Drive,16.0,23.0,Gasoline,8-Speed Automatic,3.0L I6 24V GDI DOHC Turbo,75012.0
-89.0,Lexus LS 460 Base,Used,$17,Black,–,All-wheel Drive,16.0,23.0,Gasoline,8-Speed Automatic,4.6L V8 32V PDI DOHC,130602.0
-90.0,GMC Yukon Denali,Used,$38,Black,Black,Four-wheel Drive,15.0,21.0,Gasoline,8-Speed Automatic,6.2L V8 16V GDI OHV,36347.0
-116.0,Volkswagen Atlas 3.6L SEL Premium,Used,$49,Aurora Red Metallic,Titan Black / Quarzit,All-wheel Drive,16.0,22.0,Gasoline,8-Speed Automatic,3.6L V6 24V GDI DOHC,10640.0
+116,Volkswagen Atlas 3.6L SEL Premium,Used,$49,Aurora Red Metallic,Titan Black / Quarzit,All-wheel Drive,16.0,22.0,Gasoline,8-Speed Automatic,3.6L V6 24V GDI DOHC,10640.0
+147,Ford Taurus SES,Used,$4,Green,Tan,Front-wheel Drive,20.0,27.0,Gasoline,4-Speed Automatic,3.0L V6 24V MPFI DOHC,83368.0
+149,Kia Sorento LX,Used,$28,Gray,Black,Front-wheel Drive,22.0,29.0,Gasoline,6-Speed Automatic,2.4L I4 16V GDI DOHC,21055.0
+171,Acura MDX 3.5L w/Technology Package,Used,$39,Gray,Espresso,All-wheel Drive,19.0,26.0,Gasoline,9-Speed Automatic,3.5L V6 24V GDI SOHC,12304.0
+173,Porsche Boxster S,Used,$57,Black,Black,Rear-wheel Drive,20.0,28.0,Gasoline,7-Speed Automatic with Auto-Shift,3.4L H6 24V GDI DOHC,23698.0
+177,Cadillac XT5 Premium Luxury,Cadillac Certified,$33,Stellar Black Metallic,Jet Black,Front-wheel Drive,19.0,26.0,Gasoline,8-Speed Automatic,3.6L V6 24V GDI DOHC,45313.0

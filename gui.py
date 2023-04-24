@@ -6,10 +6,7 @@ import os
 from config import *
 from utils.catboost_inference import CatPredictor
 
-data = pd.read_csv("data/cars_about.csv").dropna()
-centroid_car_ids = [177, 188, 270, 387, 246, 296, 187, 116, 255, 173, 259, 171,  89, 149,  90,  74, 320, 180, 149, 197, 252, 297, 291, 243, 368,  67, 228, 147, 193, 244, 211]
-
-
+data = pd.read_csv(car_data_path).dropna()
 liked_df = data.iloc[0:0].dropna()
 
 def intro():
@@ -34,9 +31,8 @@ def intro():
                 "Add to favorites", 
                 key="intro ".join([str(x) for x in row.fillna('').values.tolist()])
                 ):
-                # liked_df = pd.concat([start_data.iloc[index], liked_df], ignore_index=True)
-                # print(liked_df)
                 liked_df = liked_df.append(start_data.iloc[index], ignore_index = True)
+                liked_df.car_id = liked_df.car_id.astype(int)
                 liked_df.to_csv(interactions_path, index=False)
                 print(liked_df)
 
