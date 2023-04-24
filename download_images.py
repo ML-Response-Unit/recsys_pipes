@@ -4,14 +4,16 @@ from bs4 import BeautifulSoup
 import pandas as pd
 
 data = pd.read_csv("./data/cars_about.csv").dropna()
-print(data)
-
 # List of car names
 car_names = [f"{data.iloc[index].car_model} {data.iloc[index].exteriorColor}".replace("/", " ") for index in range(len(data))]
 
 
 # Loop through each car name and download the first image in the search results
 for car_name in car_names:
+    # Download the image to a file
+    filename = os.path.join(f"./images/{car_name}.jpg")
+    if os.path.exists(filename): continue
+    
     # URL of the Bing Image Search with the car name as the search query
     url = f"https://www.bing.com/images/search?q={car_name}&form=HDRSC2"
 
@@ -28,8 +30,6 @@ for car_name in car_names:
         if image_div is not None:
             image_url = image_div.find("img")["src"]
 
-            # Download the image to a file
-            filename = os.path.join(f"./images/{car_name}.jpg")
             with open(filename, "wb") as f:
                 response = requests.get(image_url)
                 f.write(response.content)

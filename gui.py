@@ -5,7 +5,7 @@ import  pandas as pd
 import os
 from config import *
 from utils.catboost_inference import CatPredictor
-
+from utils.mlp_inference import MLPPredictor
 data = pd.read_csv(car_data_path).dropna()
 liked_df = data.iloc[0:0].dropna()
 
@@ -34,13 +34,11 @@ def intro():
                 liked_df = liked_df.append(start_data.iloc[index], ignore_index = True)
                 liked_df.car_id = liked_df.car_id.astype(int)
                 liked_df.to_csv(interactions_path, index=False)
-                print(liked_df)
 
     st.sidebar.write(f"Liked Goods {len(liked_df)}/{min_selected_elements}")
     progress_bar = st.sidebar.progress((min(len(liked_df) / min_selected_elements, 1.0)))
 
 def first():
-    print(os.getcwd())
     liked_df = pd.read_csv(interactions_path)
     cat = CatPredictor()      
 
@@ -64,7 +62,27 @@ def first():
         st.warning(f"You must add {min_selected_elements} to favorites")
 
 def second():
-    st.title("second")
+    liked_df = pd.read_csv(interactions_path)
+    mlp = MLPPredictor()      
+
+    if len(liked_df) >= mlp.N_POSITIVE:       
+        start_data = data[data['car_id'].isin(mlp.predict(liked_df, 0.7))]
+        st.title("MLP")
+
+        for index in range(len(start_data)):
+            row = start_data.iloc[index]
+            car_name = f"{row.car_model} {row.exteriorColor}".replace("/", " ")
+            st.write(f"## {car_name}")
+            st.image(os.path.join("images", car_name+".jpg"), width=640)
+
+            with st.expander("Information"):
+                for column_name in start_data.columns:
+                    st.write(f"{column_name}: {row[column_name]}")
+
+        st.sidebar.write(f"Liked Goods {len(liked_df)}/{min_selected_elements}")
+        st.write("\n")
+    else:
+        st.warning(f"You must add {min_selected_elements} to favorites")
 
 def third():
     st.title("third")
@@ -73,7 +91,7 @@ def third():
 page_names_to_funcs = {
     "Cold start": intro,
     "catboost": first,
-    "second algorithm":second,
+    "MLP":second,
     "third algorithm": third
 }
 
