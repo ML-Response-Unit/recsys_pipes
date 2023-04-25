@@ -33,9 +33,9 @@ class BinaryClassification(nn.Module):
         return x
 
 class MLPPredictor:
-    def __init__(self, mlp_path="./weights/mlp.pth"):
+    def __init__(self, weights_path="./weights/mlp.pth"):
         self.model = BinaryClassification()
-        self.model.load_state_dict(torch.load(mlp_path))
+        self.model.load_state_dict(torch.load(weights_path))
         self.model.eval()
         self.N_POSITIVE = 5
         
@@ -68,14 +68,15 @@ class MLPPredictor:
 
         return batch
     
-    def predict(self, user_interactions, threshold):
+    def predict(self, user_interactions, threshold, top_k = 10):
         assert len(user_interactions) >= self.N_POSITIVE
         user_interactions = self._preprocess_user_interactions(user_interactions)
         batch = torch.tensor(self._create_batch(user_interactions).values).float()
         pred = torch.sigmoid(self.model(batch)).detach().flatten().tolist()
-        pred = [1 if x > threshold else 0 for x in pred]
-        pred = np.array(pred).nonzero()[0].tolist()
-        print(pred)
+        pred = sorted(list(enumerate(pred)), key=lambda a: a[0], reverse=True)
+        pred = [x[0] for x in pred if x[1] > threshold][:top_k]
+        # pred = [1 if x > threshold else 0 for x in pred]
+        # pred = np.array(pred).nonzero()[0].tolist()
         return pred
 
 if __name__ == "__main__":

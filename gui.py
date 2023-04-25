@@ -6,6 +6,8 @@ import os
 from config import *
 from utils.catboost_inference import CatPredictor
 from utils.mlp_inference import MLPPredictor
+from utils.autoencoder_inference import AEPredictor
+
 data = pd.read_csv(car_data_path).dropna()
 liked_df = data.iloc[0:0].dropna()
 
@@ -43,14 +45,14 @@ def first():
     cat = CatPredictor()      
 
     if len(liked_df) >= cat.N_POSITIVE:       
-        start_data = data[data['car_id'].isin(cat.predict(liked_df))]
+        start_data = data[data['car_id'].isin(data.iloc[cat.predict(liked_df)].car_id)]
         st.title("Catboost")
 
         for index in range(len(start_data)):
             row = start_data.iloc[index]
             car_name = f"{row.car_model} {row.exteriorColor}".replace("/", " ")
             st.write(f"## {car_name}")
-            st.image(os.path.join("images", car_name+".jpg"), width=640)
+            st.image(os.path.join("images", car_name+".jpg"), width=720)
 
             with st.expander("Information"):
                 for column_name in start_data.columns:
@@ -66,14 +68,14 @@ def second():
     mlp = MLPPredictor()      
 
     if len(liked_df) >= mlp.N_POSITIVE:       
-        start_data = data[data['car_id'].isin(mlp.predict(liked_df, 0.7))]
+        start_data = data[data['car_id'].isin(data.iloc[mlp.predict(liked_df, 0.9)].car_id)]
         st.title("MLP")
 
         for index in range(len(start_data)):
             row = start_data.iloc[index]
             car_name = f"{row.car_model} {row.exteriorColor}".replace("/", " ")
             st.write(f"## {car_name}")
-            st.image(os.path.join("images", car_name+".jpg"), width=640)
+            st.image(os.path.join("images", car_name+".jpg"), width=720)
 
             with st.expander("Information"):
                 for column_name in start_data.columns:
@@ -85,14 +87,32 @@ def second():
         st.warning(f"You must add {min_selected_elements} to favorites")
 
 def third():
-    st.title("third")
+    liked_df = pd.read_csv(interactions_path)
+    ae = AEPredictor()      
+     
+    start_data = data[data['car_id'].isin(data.iloc[ae.predict(liked_df, 0.7)].car_id)]
+    st.title("AutoEncoder")
+
+    for index in range(len(start_data)):
+        row = start_data.iloc[index]
+        car_name = f"{row.car_model} {row.exteriorColor}".replace("/", " ")
+        st.write(f"## {car_name}")
+        st.image(os.path.join("images", car_name+".jpg"), width=720)
+
+        with st.expander("Information"):
+            for column_name in start_data.columns:
+                st.write(f"{column_name}: {row[column_name]}")
+
+    st.sidebar.write(f"Liked Goods {len(liked_df)}/{min_selected_elements}")
+    st.write("\n")
+
 
 
 page_names_to_funcs = {
     "Cold start": intro,
     "catboost": first,
     "MLP":second,
-    "third algorithm": third
+    "AutoEncoder": third
 }
 
 if __name__ == "__main__":
