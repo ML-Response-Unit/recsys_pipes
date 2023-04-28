@@ -2,6 +2,6 @@
 images/*
 __pycache__
 data/liked.csv
-# research/catboost_info
+research/catboost_info
 research/logs
 research/.ipynb_checkpoints
