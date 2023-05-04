@@ -7,6 +7,7 @@ from config import *
 from utils.catboost_inference import CatPredictor
 from utils.mlp_inference import MLPPredictor
 from utils.autoencoder_inference import AEPredictor
+from utils.item_based import get_item_based_reccomendation
 
 data = pd.read_csv(car_data_path).dropna()
 liked_df = data.iloc[0:0].dropna()
@@ -106,13 +107,32 @@ def third():
     st.sidebar.write(f"Liked Goods {len(liked_df)}/{min_selected_elements}")
     st.write("\n")
 
+def fourth():
+    liked_df = pd.read_csv(interactions_path)
+     
+    start_data = data[data['car_id'].isin(data.iloc[get_item_based_reccomendation(liked_df)].car_id)]
+    st.title("AutoEncoder")
+
+    for index in range(len(start_data)):
+        row = start_data.iloc[index]
+        car_name = f"{row.car_model} {row.exteriorColor}".replace("/", " ")
+        st.write(f"## {car_name}")
+        st.image(os.path.join("images", car_name+".jpg"), width=720)
+
+        with st.expander("Information"):
+            for column_name in start_data.columns:
+                st.write(f"{column_name}: {row[column_name]}")
+
+    st.sidebar.write(f"Liked Goods {len(liked_df)}/{min_selected_elements}")
+    st.write("\n")
 
 
 page_names_to_funcs = {
     "Cold start": intro,
     "catboost": first,
     "MLP":second,
-    "AutoEncoder": third
+    "AutoEncoder": third,
+    "Item Based": fourth
 }
 
 if __name__ == "__main__":

@@ -41,14 +41,12 @@ def load_and_preprocess(path:str, df:pd.DataFrame=None, scaler = StandardScaler(
     return data_norm
 
 
-def get_item_based_reccomendation(user_path:str, datasets_path='../data/',top_k:int =5 ) -> pd.DataFrame:
+def get_item_based_reccomendation(user_profile, datasets_path='./data/',top_k:int =30 ) -> pd.DataFrame:
     
     # db_cars = load_and_preprocess(datasets_path)
     # print(db_cars)
 
-    transformed_db = pd.read_csv('../data/transformed_dataset.csv')
-
-    user_profile = pd.read_csv(os.path.join(datasets_path, user_path))
+    transformed_db = pd.read_csv(os.path.join(datasets_path, 'transformed_dataset.csv'))
       
     user_dist = [transformed_db.iloc[int(k)].to_numpy() for k in user_profile.car_id.values]
 
@@ -58,9 +56,4 @@ def get_item_based_reccomendation(user_path:str, datasets_path='../data/',top_k:
     
     sorted_matrix = transformed_db.apply(lambda x: distance.cosine(x.values, mean_dist), axis='columns').sort_values()
 
-    return sorted_matrix[:top_k]
-    
-if __name__ == "__main__":
-    recs = get_item_based_reccomendation('../data/liked.csv')
-    # print(recs)
-    
+    return sorted_matrix.iloc[:top_k].index.tolist()
