@@ -8,11 +8,17 @@ from utils.catboost_inference import CatPredictor
 from utils.mlp_inference import MLPPredictor
 from utils.autoencoder_inference import AEPredictor
 from utils.item_based import get_item_based_reccomendation
+from utils.ncf_inference import ncf_inference
+from utils.svd_cf_inference import recommender as svd_inference
 
 data = pd.read_csv(car_data_path).dropna()
 liked_df = data.iloc[0:0].dropna()
 
-def intro():
+def cold_start_page():
+    """
+    This function displays a set of cars to the user and asks them to add a certain 
+    number of cars to their favorites before car recommendations can be made.
+    """
     global liked_df
     start_data = data[data['car_id'].isin(centroid_car_ids)]
     st.title("Few steps before you start...")
@@ -34,23 +40,32 @@ def intro():
                 "Add to favorites", 
                 key="intro ".join([str(x) for x in row.fillna('').values.tolist()])
                 ):
-                liked_df = liked_df.append(start_data.iloc[index], ignore_index = True)
+                liked_df = pd.concat([
+                    liked_df, 
+                    pd.DataFrame(start_data.iloc[index].apply(lambda a: [a]).to_dict())], 
+                    ignore_index = True
+                )
                 liked_df.car_id = liked_df.car_id.astype(int)
                 liked_df.to_csv(interactions_path, index=False)
 
     st.sidebar.write(f"Liked Goods {len(liked_df)}/{min_selected_elements}")
     progress_bar = st.sidebar.progress((min(len(liked_df) / min_selected_elements, 1.0)))
 
-def first():
+def catboost_page():
+    """
+    This function uses a trained CatBoost model to make car 
+    recommendations based on the user's favorite cars.
+    """
     liked_df = pd.read_csv(interactions_path)
     cat = CatPredictor()      
 
     if len(liked_df) >= cat.N_POSITIVE:       
-        start_data = data[data['car_id'].isin(data.iloc[cat.predict(liked_df, top_k=top_k_recommendations)].car_id)]
+        pred_ids = cat.predict(liked_df, top_k=top_k_recommendations)
+        pred_ids = [i + 1 for i in pred_ids]
+        start_data = data.iloc[pred_ids]
         st.title("Catboost")
 
-        for index in range(len(start_data)):
-            row = start_data.iloc[index]
+        for index, row in start_data.iterrows():
             car_name = f"{row.car_model} {row.exteriorColor}".replace("/", " ")
             st.write(f"## {car_name}")
             st.image(os.path.join("images", car_name+".jpg"), width=720)
@@ -64,12 +79,18 @@ def first():
     else:
         st.warning(f"You must add {min_selected_elements} to favorites")
 
-def second():
+def mlp_page():
+    """
+    This page uses the MLP algorithm to recommend cars based on the ones you've liked so far. 
+    You need to add at least 5 cars to your favorites list before using this page.
+    """
     liked_df = pd.read_csv(interactions_path)
     mlp = MLPPredictor()      
 
-    if len(liked_df) >= mlp.N_POSITIVE:       
-        start_data = data[data['car_id'].isin(data.iloc[mlp.predict(liked_df, 0.6, top_k=top_k_recommendations)].car_id)]
+    if len(liked_df) >= mlp.N_POSITIVE: 
+        pred_ids = mlp.predict(liked_df, 0.6, top_k=top_k_recommendations)      
+        pred_ids = [i + 1 for i in pred_ids]
+        start_data = data.iloc[pred_ids]
         st.title("MLP")
 
         for index in range(len(start_data)):
@@ -87,11 +108,16 @@ def second():
     else:
         st.warning(f"You must add {min_selected_elements} to favorites")
 
-def third():
+def autoencoder_page():
+    """
+    This page uses the Autoencoder algorithm to recommend 
+    cars based on the ones you've liked so far.
+    """
     liked_df = pd.read_csv(interactions_path)
     ae = AEPredictor()      
-     
-    start_data = data[data['car_id'].isin(data.iloc[ae.predict(liked_df, 0.5, top_k=top_k_recommendations)].car_id)]
+    pred_ids = ae.predict(liked_df, 0.5, top_k=top_k_recommendations)
+    pred_ids = [i + 1 for i in pred_ids]
+    start_data = data.iloc[pred_ids]
     st.title("AutoEncoder")
 
     for index in range(len(start_data)):
@@ -107,11 +133,16 @@ def third():
     st.sidebar.write(f"Liked Goods {len(liked_df)}/{min_selected_elements}")
     st.write("\n")
 
-def fourth():
+def item_based_classic_page():
+    """
+    This page uses the Item-based Collaborative Filtering algorithm 
+    to recommend cars based on the ones you've liked so far.
+    """
     liked_df = pd.read_csv(interactions_path)
-     
-    start_data = data[data['car_id'].isin(data.iloc[get_item_based_reccomendation(liked_df, top_k=top_k_recommendations)].car_id)]
-    st.title("AutoEncoder")
+    pred_ids = get_item_based_reccomendation(liked_df, top_k=top_k_recommendations)
+
+    start_data = data[data['car_id'].isin(data.iloc[pred_ids].car_id)]
+    st.title("Item Based (classic)")
 
     for index in range(len(start_data)):
         row = start_data.iloc[index]
@@ -126,13 +157,61 @@ def fourth():
     st.sidebar.write(f"Liked Goods {len(liked_df)}/{min_selected_elements}")
     st.write("\n")
 
+def ncf_page():
+    """
+    This page uses the Neural Collaborative Filtering algorithm 
+    to recommend cars based on the ones you've liked so far.
+    """
+    liked_df = pd.read_csv(interactions_path)
+    pred_ids = ncf_inference(liked_df, top_k=top_k_recommendations)
+    pred_ids = [i + 1 for i in pred_ids]
+    start_data = data[data['car_id'].isin(data.iloc[pred_ids].car_id)]
+    st.title("Neural Colaborative Filtering")
+
+    for index in range(len(start_data)):
+        row = start_data.iloc[index]
+        car_name = f"{row.car_model} {row.exteriorColor}".replace("/", " ")
+        st.write(f"## {car_name}")
+        st.image(os.path.join("images", car_name+".jpg"), width=720)
+
+        with st.expander("Information"):
+            for column_name in start_data.columns:
+                st.write(f"{column_name}: {row[column_name]}")
+
+    st.sidebar.write(f"Liked Goods {len(liked_df)}/{min_selected_elements}")
+    st.write("\n")
+
+def svd_page():
+    """
+    This page uses the Neural Collaborative Filtering algorithm 
+    to recommend cars based on the ones you've liked so far.
+    """
+    liked_df = pd.read_csv(interactions_path)
+    pred_ids = svd_inference.inference(liked_df, top_k=top_k_recommendations)
+    start_data = data[data['car_id'].isin(data.iloc[pred_ids].car_id)]
+    st.title("Collaborative Filtering (SVD)")
+
+    for index in range(len(start_data)):
+        row = start_data.iloc[index]
+        car_name = f"{row.car_model} {row.exteriorColor}".replace("/", " ")
+        st.write(f"## {car_name}")
+        st.image(os.path.join("images", car_name+".jpg"), width=720)
+
+        with st.expander("Information"):
+            for column_name in start_data.columns:
+                st.write(f"{column_name}: {row[column_name]}")
+
+    st.sidebar.write(f"Liked Goods {len(liked_df)}/{min_selected_elements}")
+    st.write("\n")
 
 page_names_to_funcs = {
-    "Cold start": intro,
-    "catboost": first,
-    "MLP":second,
-    "AutoEncoder": third,
-    "Item Based": fourth
+    "Cold start": cold_start_page,
+    "Neural Colaborative Filtering":ncf_page,
+    "Collaborative Filtering (SVD)":svd_page,
+    "Item Based (classic)": item_based_classic_page,
+    "AutoEncoder": autoencoder_page,
+    "catboost": catboost_page,
+    "MLP":mlp_page,
 }
 
 if __name__ == "__main__":

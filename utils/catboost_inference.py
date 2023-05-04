@@ -43,8 +43,10 @@ class CatPredictor:
         batch = self._create_batch(user_interactions)
         pred = self.catboost.predict_proba(batch)[:, 1]
         pred = sorted(list(enumerate(pred)), key=lambda a: a[1], reverse=True)
-        pred = [x[0] for x in pred if x[1] > threshold][:top_k]
-        return sorted(pred)
+        pred = [x[0] for x in pred[:top_k]]
+        return pred
+
+
 
 if __name__ == "__main__":
     catpred = CatPredictor()

@@ -58,8 +58,8 @@ class AEPredictor:
         user_interactions = self._preprocess_user_interactions(user_interactions)
         pred = torch.sigmoid(self.model(user_interactions)).detach().flatten().tolist()
         pred = sorted(list(enumerate(pred)), key=lambda a: a[1], reverse=True)
-        pred = [x[0] for x in pred if x[1] > threshold][:top_k]
-        return sorted(pred)
+        pred = [x[0] for x in pred[:top_k]]
+        return pred
 
 if __name__ == "__main__":
     ae_pred = AEPredictor()

@@ -1,7 +1,8 @@
 car_id,car_model,used_label,price,exteriorColor,interiorColor,drivetrain,minMPG,maxMPG,fuelType,transmission,engine,mileage
-147,Ford Taurus SES,Used,$4,Green,Tan,Front-wheel Drive,20.0,27.0,Gasoline,4-Speed Automatic,3.0L V6 24V MPFI DOHC,83368.0
 149,Kia Sorento LX,Used,$28,Gray,Black,Front-wheel Drive,22.0,29.0,Gasoline,6-Speed Automatic,2.4L I4 16V GDI DOHC,21055.0
-171,Acura MDX 3.5L w/Technology Package,Used,$39,Gray,Espresso,All-wheel Drive,19.0,26.0,Gasoline,9-Speed Automatic,3.5L V6 24V GDI SOHC,12304.0
-173,Porsche Boxster S,Used,$57,Black,Black,Rear-wheel Drive,20.0,28.0,Gasoline,7-Speed Automatic with Auto-Shift,3.4L H6 24V GDI DOHC,23698.0
-177,Cadillac XT5 Premium Luxury,Cadillac Certified,$33,Stellar Black Metallic,Jet Black,Front-wheel Drive,19.0,26.0,Gasoline,8-Speed Automatic,3.6L V6 24V GDI DOHC,45313.0
-180,BMW X3 sDrive30i,Used,$31,Jet Black,Black,Rear-wheel Drive,23.0,30.0,Gasoline,8-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,57583.0
+193,Chevrolet Silverado 1500 RST,Used,$47,–,–,Four-wheel Drive,19.0,22.0,Gasoline,8-Speed Automatic,5.3L V8 16V GDI OHV,26589.0
+228,BMW X3 M40i,Used,$47,Alpine White,Black,All-wheel Drive,20.0,27.0,Gasoline,8-Speed Automatic,3.0L I6 24V GDI DOHC Turbo,33855.0
+243,Honda Accord EX-L 1.5T,Used,$18,Modern Steel Metallic,Gray,Front-wheel Drive,30.0,38.0,Gasoline,–,Engine: 1.5T I-4 DOHC 16-Valve Turbocharged VTEC,87091.0
+291,Mazda Mazda3 FWD w/Preferred Package,Used,$27,Snowflake White Pearl,Black / Navy Blue,Front-wheel Drive,26.0,35.0,Gasoline,6-Speed Automatic,2.5L I4 16V GDI DOHC,11945.0
+297,Volvo XC60 T5 Momentum,Used,$38,Crystal White,–,All-wheel Drive,20.0,27.0,Gasoline,8-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,31039.0
+320,Acura MDX 3.5L,Used,$23,White,Beige,All-wheel Drive,18.0,27.0,Gasoline,6-Speed Automatic,3.5L V6 24V GDI SOHC,99697.0
