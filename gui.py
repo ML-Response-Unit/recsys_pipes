@@ -46,7 +46,7 @@ def first():
     cat = CatPredictor()      
 
     if len(liked_df) >= cat.N_POSITIVE:       
-        start_data = data[data['car_id'].isin(data.iloc[cat.predict(liked_df)].car_id)]
+        start_data = data[data['car_id'].isin(data.iloc[cat.predict(liked_df, top_k=top_k_recommendations)].car_id)]
         st.title("Catboost")
 
         for index in range(len(start_data)):
@@ -69,7 +69,7 @@ def second():
     mlp = MLPPredictor()      
 
     if len(liked_df) >= mlp.N_POSITIVE:       
-        start_data = data[data['car_id'].isin(data.iloc[mlp.predict(liked_df, 0.9)].car_id)]
+        start_data = data[data['car_id'].isin(data.iloc[mlp.predict(liked_df, 0.6, top_k=top_k_recommendations)].car_id)]
         st.title("MLP")
 
         for index in range(len(start_data)):
@@ -91,7 +91,7 @@ def third():
     liked_df = pd.read_csv(interactions_path)
     ae = AEPredictor()      
      
-    start_data = data[data['car_id'].isin(data.iloc[ae.predict(liked_df, 0.7)].car_id)]
+    start_data = data[data['car_id'].isin(data.iloc[ae.predict(liked_df, 0.5, top_k=top_k_recommendations)].car_id)]
     st.title("AutoEncoder")
 
     for index in range(len(start_data)):
@@ -110,7 +110,7 @@ def third():
 def fourth():
     liked_df = pd.read_csv(interactions_path)
      
-    start_data = data[data['car_id'].isin(data.iloc[get_item_based_reccomendation(liked_df)].car_id)]
+    start_data = data[data['car_id'].isin(data.iloc[get_item_based_reccomendation(liked_df, top_k=top_k_recommendations)].car_id)]
     st.title("AutoEncoder")
 
     for index in range(len(start_data)):

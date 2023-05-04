@@ -73,11 +73,20 @@ class MLPPredictor:
         user_interactions = self._preprocess_user_interactions(user_interactions)
         batch = torch.tensor(self._create_batch(user_interactions).values).float()
         pred = torch.sigmoid(self.model(batch)).detach().flatten().tolist()
-        pred = sorted(list(enumerate(pred)), key=lambda a: a[0], reverse=True)
+        pred = sorted(list(enumerate(pred)), key=lambda a: a[1], reverse=True)
         pred = [x[0] for x in pred if x[1] > threshold][:top_k]
-        # pred = [1 if x > threshold else 0 for x in pred]
-        # pred = np.array(pred).nonzero()[0].tolist()
-        return pred
+        return sorted(pred)
+
+
+# # user_interactions = self._preprocess_user_interactions(user_interactions)
+# # # batch = torch.tensor(self._create_batch(user_interactions).values).float()
+# # pred = torch.sigmoid(self.model(user_interactions)).detach().flatten().tolist()
+# pred = sorted(list(enumerate(pred)), key=lambda a: a[1], reverse=True)
+# # print(pred)
+# pred = [x[0] for x in pred if x[1] > threshold][:top_k]
+# # pred = np.array(pred).nonzero()[0].tolist()
+# # print(pred)
+# return pred
 
 if __name__ == "__main__":
     mlp_pred = MLPPredictor()
