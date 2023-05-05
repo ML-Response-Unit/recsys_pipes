@@ -44,7 +44,7 @@ class AE(nn.Module):
 class AEPredictor:
     def __init__(self, weights_path="./weights/autoencoder.pth"):
         self.model = AE(input_shape = len(unique_train_cars))
-        self.model.load_state_dict(torch.load(weights_path))
+        self.model.load_state_dict(torch.load(weights_path), map_location="cpu")
         self.model.eval()
     
     def _preprocess_user_interactions(self, user_interactions):

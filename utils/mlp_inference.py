@@ -35,7 +35,7 @@ class BinaryClassification(nn.Module):
 class MLPPredictor:
     def __init__(self, weights_path="./weights/mlp.pth"):
         self.model = BinaryClassification()
-        self.model.load_state_dict(torch.load(weights_path))
+        self.model.load_state_dict(torch.load(weights_path), map_location="cpu")
         self.model.eval()
         self.N_POSITIVE = 5
         
