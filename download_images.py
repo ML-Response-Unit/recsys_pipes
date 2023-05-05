@@ -2,14 +2,15 @@ import os
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
+import tqdm 
 
 data = pd.read_csv("./data/cars_about.csv").dropna()
 # List of car names
 car_names = [f"{data.iloc[index].car_model} {data.iloc[index].exteriorColor}".replace("/", " ") for index in range(len(data))]
-
+missed_cars = []
 
 # Loop through each car name and download the first image in the search results
-for car_name in car_names:
+for car_name in tqdm.tqdm(car_names):
     # Download the image to a file
     filename = os.path.join(f"./images/{car_name}.jpg")
     if os.path.exists(filename): continue
@@ -33,8 +34,12 @@ for car_name in car_names:
             with open(filename, "wb") as f:
                 response = requests.get(image_url)
                 f.write(response.content)
-                print(f"{filename} downloaded successfully!")
+                # print(f"{filename} downloaded successfully!")
         else:
-            print(f"No image found for {car_name}")
+            missed_cars.append(car_name)
+            # print(f"No image found for {car_name}")
     else:
         print(f"Error: {response.status_code}")
+
+if missed_cars:
+    print("Image not founded for cars: ", missed_cars)
