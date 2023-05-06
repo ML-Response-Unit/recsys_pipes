@@ -96,12 +96,15 @@ class ItemBasedCollaborativeFiltering():
         liked_ = user_dists.apply(lambda row: row[row == 1.0].index, axis=1)
 
         
+        
         cars = {}
         for i, v in enumerate(liked_):
             for id_, dist in slope_score:
-                
+        
                 if id_ in v:
-                    cars[id_] = dist*(2 - user_dists.loc[liked_.index[i]].dist)
+                    cars[id_] = 0
+                    cars[id_] = max(dist*(2 - user_dists.loc[liked_.index[i]].dist),  cars[id_])
+
         result = pd.DataFrame(cars, index=['score']).transpose().sort_values(by='score', ascending=False)
         
         return result[:top_k]
