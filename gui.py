@@ -10,6 +10,7 @@ from utils.autoencoder_inference import AEPredictor
 from utils.item_based import get_item_based_reccomendation
 from utils.ncf_inference import ncf_inference
 from utils.svd_cf_inference import recommender as svd_inference
+from utils.collaborative import ItemBasedCollaborativeFiltering
 
 data = pd.read_csv(car_data_path).dropna()
 liked_df = data.iloc[0:0].dropna()
@@ -204,10 +205,43 @@ def svd_page():
     st.sidebar.write(f"Liked Goods {len(liked_df)}/{min_selected_elements}")
     st.write("\n")
 
+def collaborative_item_based_page():
+    """
+    This page uses the Collaborative Filtering algorithm 
+    to recommend cars based on the ones you've liked so far.
+    """
+    actions = pd.read_csv("./data/said_to_actions_processed.csv")
+    actions_pivot_table = pd.pivot_table(actions, values='interaction', index='user_id', columns='car_id').fillna(0)
+    transformed_db = pd.read_csv('./data/transformed_dataset.csv').drop('Unnamed: 0', axis='columns')
+    item_based_cf = ItemBasedCollaborativeFiltering(list(range(500)), transformed_db, actions_pivot_table)
+    users_ratings = item_based_cf.prepare_data()
+    item_based_cf.compute_deviations()
+
+    test_user = pd.read_csv("./data/user_interactions.csv")
+    user = {int(test_user['car_id'][i]):1.0 for i in range(len(test_user))}
+    pred_ids = item_based_cf.recommend(user, top_k_recommendations).index.tolist()
+    start_data = data[data['car_id'].isin(data.iloc[pred_ids].car_id)]
+
+    st.title("Collaborative Filtering (Item Based)")
+
+    for index in range(len(start_data)):
+        row = start_data.iloc[index]
+        car_name = f"{row.car_model} {row.exteriorColor}".replace("/", " ")
+        st.write(f"## {car_name}")
+        st.image(os.path.join("images", car_name+".jpg"), width=720)
+
+        with st.expander("Information"):
+            for column_name in start_data.columns:
+                st.write(f"{column_name}: {row[column_name]}")
+
+    st.sidebar.write(f"Liked Goods {len(liked_df)}/{min_selected_elements}")
+    st.write("\n")
+    
 page_names_to_funcs = {
     "Cold start": cold_start_page,
-    "Neural Colaborative Filtering":ncf_page,
+    "Colaborative Filtering (Neural )":ncf_page,
     "Collaborative Filtering (SVD)":svd_page,
+    "Collaborative Filtering (Item Based)":collaborative_item_based_page,
     "Item Based (classic)": item_based_classic_page,
     "AutoEncoder": autoencoder_page,
     "catboost": catboost_page,

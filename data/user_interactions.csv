@@ -1,0 +1,5 @@
+car_id,car_model,used_label,price,exteriorColor,interiorColor,drivetrain,minMPG,maxMPG,fuelType,transmission,engine,mileage
+291,Mazda Mazda3 FWD w/Preferred Package,Used,$27,Snowflake White Pearl,Black / Navy Blue,Front-wheel Drive,26.0,35.0,Gasoline,6-Speed Automatic,2.5L I4 16V GDI DOHC,11945.0
+297,Volvo XC60 T5 Momentum,Used,$38,Crystal White,–,All-wheel Drive,20.0,27.0,Gasoline,8-Speed Automatic,2.0L I4 16V GDI DOHC Turbo,31039.0
+320,Acura MDX 3.5L,Used,$23,White,Beige,All-wheel Drive,18.0,27.0,Gasoline,6-Speed Automatic,3.5L V6 24V GDI SOHC,99697.0
+387,Dodge Challenger SXT,Used,$27,White Knuckle Clearcoat,Black,Rear-wheel Drive,19.0,30.0,Gasoline,8-Speed Automatic,3.6L V6 24V MPFI DOHC,19501.0
