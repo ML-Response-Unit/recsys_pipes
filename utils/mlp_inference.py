@@ -74,6 +74,7 @@ class MLPPredictor:
         batch = torch.tensor(self._create_batch(user_interactions).values).float()
         pred = torch.sigmoid(self.model(batch)).detach().flatten().tolist()
         pred = sorted(list(enumerate(pred)), key=lambda a: a[1], reverse=True)
+        print(pred)
         pred = [x[0] for x in pred if x[1] > threshold][:top_k]
         return pred
 
