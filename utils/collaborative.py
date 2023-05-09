@@ -106,7 +106,8 @@ class ItemBasedCollaborativeFiltering():
                     cars[id_] = max(dist*(2 - user_dists.loc[liked_.index[i]].dist),  cars[id_])
 
         result = pd.DataFrame(cars, index=['score']).transpose().sort_values(by='score', ascending=False)
-        
+        if top_k == 0:
+            return result
         return result[:top_k]
 
 
@@ -130,15 +131,20 @@ class ItemBasedCollaborativeFiltering():
         
         return self.user_sparse_dist
     
-
-if __name__ == "__main__":
+def collaborative_reccomendation(test=None, **kwargs):
     actions = pd.read_csv("../data/said_to_actions_processed.csv")
     actions_pivot_table = pd.pivot_table(actions, values='interaction', index='user_id', columns='car_id').fillna(0)
+
     transformed_db = pd.read_csv('../data/transformed_dataset.csv').drop('Unnamed: 0', axis='columns')
+
     item_based_cf = ItemBasedCollaborativeFiltering(list(range(500)), transformed_db, actions_pivot_table)
+    
     users_ratings = item_based_cf.prepare_data()
     item_based_cf.compute_deviations()
 
     test_user = pd.read_csv("../data/liked.csv")
     user = {int(test_user['car_id'][i]):1.0 for i in range(len(test_user))}
+    if test:
+        return item_based_cf.recommend(test[0], **kwargs)
     recommendations = item_based_cf.recommend(user)
+    return recommendations
